@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MockEspn\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {}
+    "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {}
   },
   "projects": {
-    "C:\\MockEspn\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {
+    "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MockEspn\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\MockEspn\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
-        "packagesPath": "C:\\Users\\nslin\\.nuget\\packages\\",
-        "outputPath": "C:\\MockEspn\\GameZone Sports Network\\GameZone Sports Network\\obj\\",
+        "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+        "packagesPath": "C:\\Users\\cgmoe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nslin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cgmoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

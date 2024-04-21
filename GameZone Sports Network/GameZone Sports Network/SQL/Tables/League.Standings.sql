@@ -1,0 +1,12 @@
+   IF OBJECT_ID(N'League.Standings') IS NULL
+BEGIN
+CREATE TABLE League.Standings
+(
+	StandingsID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	TeamID INT NOT NULL FOREIGN KEY
+		REFERENCES League.Team(TeamID),
+	[Week] INT NOT NULL,
+
+	UNIQUE(TeamID)
+);
+END

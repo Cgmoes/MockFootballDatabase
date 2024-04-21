@@ -1,0 +1,13 @@
+   IF OBJECT_ID(N'League.PlayerTeam') IS NULL
+BEGIN
+CREATE TABLE League.PlayerTeam
+(
+	PlayerTeamID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	PlayerID INT NOT NULL FOREIGN KEY
+		REFERENCES League.Player(PlayerID),
+	TeamID INT NOT NULL FOREIGN KEY
+		REFERENCES League.Team(TeamID),
+
+	UNIQUE(PlayerID, TeamID)
+);
+END
