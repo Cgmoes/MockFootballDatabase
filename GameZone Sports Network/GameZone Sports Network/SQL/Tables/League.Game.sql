@@ -8,6 +8,7 @@ CREATE TABLE League.Game
 	AwayTeamID INT NOT NULL FOREIGN KEY
 		REFERENCES League.Team(TeamID),
 	GameWeek INT NOT NULL,
-	Score INT NOT NULL,
+	HomeScore INT NOT NULL,
+	AwayScore INT NOT NULL
 );
 END

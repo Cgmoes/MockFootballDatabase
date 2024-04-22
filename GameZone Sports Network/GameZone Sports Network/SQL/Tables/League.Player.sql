@@ -1,4 +1,4 @@
-   IF OBJECT_ID(N'League.Player') IS NULL
+IF OBJECT_ID(N'League.Player') IS NULL
 BEGIN
 CREATE TABLE League.Player
 (
