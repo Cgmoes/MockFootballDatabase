@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+      "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
       "packagesPath": "C:\\Users\\cgmoe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\obj\\",
+      "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GameZone Sports Network\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cgmoe\\AppData\\Roaming\\NuGet\\NuGet.Config",

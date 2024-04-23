@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using PersonData.Models;
+using Data.Models;
 
-namespace PersonData
+namespace Data
 {
    public interface IPersonRepository
    {
@@ -11,7 +11,7 @@ namespace PersonData
       /// <returns>
       /// <see cref="IReadOnlyList{Person}"/> containing all persons.
       /// </returns>
-      IReadOnlyList<Person> RetrievePersons();
+      IReadOnlyList<Player> RetrievePlayers();
 
       /// <summary>
       /// Fetches the person with the given <paramref name="personId"/> if it exists.
@@ -23,7 +23,7 @@ namespace PersonData
       /// <exception cref="DataAccess.RecordNotFoundException">
       /// Thrown if <paramref name="personId"/> does not exist.
       /// </exception>
-      Person FetchPerson(int personId);
+      Player FetchPlayer(int personId);
 
       /// <summary>
       /// Gets the person with the given <paramref name="personId"/> if it exists.
@@ -34,7 +34,7 @@ namespace PersonData
       /// if one exists with with the provided <paramref name="email"/>.
       /// If one is not found, <c>null</c> is returned.
       /// </returns>
-      Person GetPerson(string email);
+      Player GetPlayer(string email);
 
       /// <summary>
       /// Creates a new person in the repository.
@@ -45,6 +45,6 @@ namespace PersonData
       /// <returns>
       /// The resulting instance of <see cref="Person"/>.
       /// </returns>
-      Person CreatePerson(string firstName, string lastName, string email);
+      Player CreatePerson(string firstName, string lastName, string email);
    }
 }

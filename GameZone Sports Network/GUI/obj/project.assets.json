@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\GUI.csproj",
+      "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GUI\\GUI.csproj",
       "packagesPath": "C:\\Users\\cgmoe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\obj\\",
+      "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cgmoe\\AppData\\Roaming\\NuGet\\NuGet.Config",

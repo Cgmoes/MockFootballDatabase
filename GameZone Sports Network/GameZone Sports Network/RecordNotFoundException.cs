@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace PersonData
+namespace Data
 {
    [Serializable]
    public class RecordNotFoundException : Exception
