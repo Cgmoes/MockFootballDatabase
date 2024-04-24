@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -32,16 +31,6 @@ namespace GUI
             {
                 SubmitClose?.Invoke(sender, new CustomEventArgs(b.Name));
             }
-
-            string teamName = nameBox.Text;
-            string teamCity = cityBox.Text;
-            string yearEstablished = yearBox.Text;
-            int year = int.Parse(yearEstablished);
-
-            string connetionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
-
-            SqlTeamRepository s = new SqlTeamRepository(connetionString);
-            s.CreateTeam(teamName, teamCity, year);
         }
     }
 }

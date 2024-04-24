@@ -16,7 +16,7 @@
 
         </Grid.ColumnDefinitions>
         <Button Name="HomeButton" Grid.Column="0" Width="250" Height="100" Background="Transparent" BorderThickness="0"  Click="ButtonClick"  HorizontalContentAlignment="Left">
-            <Image Source="img/Projectpic1.JPG" Width="204"/>
+            <Image Source="img/ProjectPic1.jpg" Width="204"/>
         </Button>
         <Button Name="InsertButton" Grid.Column="1" Foreground="#2c0483" Background="Transparent" FontWeight="Bold" BorderThickness="0" Click="ButtonClick" FontSize="40">Insert</Button>
         <Button Name="UpdateButton" Grid.Column="2" Foreground="#2c0483" Background="Transparent" FontWeight="Bold" BorderThickness="0" Click="ButtonClick" FontSize="40">Update</Button>

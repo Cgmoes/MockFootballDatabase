@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GUI
 {
     /// <summary>
-    /// Interaction logic for WeekMatchupsControl.xaml
+    /// Interaction logic for DefensiveStatsWindow.xaml
     /// </summary>
-    public partial class WeekMatchupsControl : UserControl
+    public partial class DefensiveStatsWindow : Window
     {
-        public WeekMatchupsControl()
+        public DefensiveStatsWindow()
         {
             InitializeComponent();
         }

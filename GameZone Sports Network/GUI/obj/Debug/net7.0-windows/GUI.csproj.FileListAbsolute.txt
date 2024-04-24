@@ -156,3 +156,61 @@ C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\n
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateControl.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\WeekMatchupsControl.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.Up2Date
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.exe
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.deps.json
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.pdb
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\Data.dll
+C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\Data.pdb
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\CountBox.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertControl.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertPlayerWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\ResultInsertWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdate.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdateInfo.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\DefensiveStatsWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\OffensiveStatsWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\SpecialTeamsStatsWindow.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\TopButtonBar.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\UpdateControl.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\App.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI_MarkupCompile.cache
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI_MarkupCompile.lref
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\CountBox.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertControl.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertPlayerWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\ResultInsertWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdate.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdateInfo.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\DefensiveStatsWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\OffensiveStatsWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\SpecialTeamsStatsWindow.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\TopButtonBar.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\UpdateControl.baml
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.g.resources
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.sourcelink.json
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.Up2Date
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.dll
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
+C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll

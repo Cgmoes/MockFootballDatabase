@@ -48,6 +48,18 @@ namespace GUI
                 _setTeam = value;
             }
         }
+        private ResultInsertWindow _setResults= new ResultInsertWindow();
+        public ResultInsertWindow ResultInsertWindow
+        {
+            get
+            {
+                return _setResults;
+            }
+            set
+            {
+                _setResults = value;
+            }
+        }
         public void ClickPlayerButton(object sender, RoutedEventArgs e)
         {
             InsertPlayerWindow i = new InsertPlayerWindow();
@@ -61,7 +73,14 @@ namespace GUI
             i.Show();
             InsertTeamWindow = i;
             checkButton();
-        } 
+        }
+        public void ClickResultsButton(object sender, RoutedEventArgs e)
+        {
+            ResultInsertWindow r = new ResultInsertWindow();
+            r.Show();
+            ResultInsertWindow = r;
+            checkButton();
+        }
         public void SubmitCloseEvent(object sender, CustomEventArgs e)
         {
             if(e.Name == "SubmitButtonPlayer")
@@ -71,6 +90,10 @@ namespace GUI
             if (e.Name == "SubmitButtonTeam")
             {
                 InsertTeamWindow.Close();
+            }
+            if(e.Name == "SubmitButtonResults")
+            {
+                ResultInsertWindow.Close();
             }
         }
         private void checkButton()

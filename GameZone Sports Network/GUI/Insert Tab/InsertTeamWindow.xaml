@@ -17,15 +17,15 @@
         <TextBlock FontSize="30">Enter in a Team:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Team Name:</TextBlock>
-            <TextBox Name="nameBox" Width="194" Height="22"/>
+            <TextBox Width="194" Height="22"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Team City:</TextBlock>
-            <TextBox Name="cityBox" Width="175" Height="22"/>
+            <TextBox Width="175" Height="22"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
-            <TextBlock Name="yearEstablished" FontSize="15" Margin="11">Year Established:</TextBlock>
-            <TextBox Name="yearBox" Width="80" Height="22"/>
+            <TextBlock FontSize="15" Margin="11">Year Established:</TextBlock>
+            <TextBox Width="80" Height="22"/>
         </StackPanel>
         <Button x:Name="SubmitButtonTeam" Click="SubmitClick" Grid.Row="10" FontSize="17" Margin="31,10,220,10">Submit</Button>
     </Grid>

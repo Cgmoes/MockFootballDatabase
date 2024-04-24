@@ -1,19 +1,17 @@
-﻿<UserControl x:Class="GUI.WeekMatchupsControl"
+﻿<UserControl x:Class="GUI.UpdateControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GUI"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="500">
-    <Grid>
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="LightGray">
         <Grid.RowDefinitions>
-            <RowDefinition Height=".2*"/>
+            <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock FontSize="30">Week</TextBlock>
-            <local:CountBox/>
-        </StackPanel>
+        <Button x:Name="UpdateTeamButton" Grid.Row="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update Team</Button>
+        <Button x:Name="UpdatePlayerButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update player</Button>
     </Grid>
 </UserControl>

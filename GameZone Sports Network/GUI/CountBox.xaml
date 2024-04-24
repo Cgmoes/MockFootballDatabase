@@ -5,16 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GUI"
              mc:Ignorable="d" 
-            d:DesignHeight="50" d:DesignWidth="100">
+            d:DesignHeight="20" d:DesignWidth="80">
     <Grid MinWidth="80">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-
         <Button Click="HandleDecrement" Grid.Column="0">-</Button>
-        <TextBlock Text="{Binding Path=Count, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:CountBox}}" Grid.Column="1"/>
-        <Button Click="HandleIncrement" Grid.Column="2">+</Button>
+            <TextBlock FontWeight="Black" HorizontalAlignment="Center" Text="{Binding Path=Count, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:CountBox}}" Grid.Column="1"/>
+            <Button Click="HandleIncrement" Grid.Column="2">+</Button>
     </Grid>
 </UserControl>

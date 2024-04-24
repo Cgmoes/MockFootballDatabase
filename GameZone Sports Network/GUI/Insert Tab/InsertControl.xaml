@@ -7,11 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="LightGray">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Button x:Name="InsertPlayerButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickPlayerButton">Insert player</Button>
-        <Button x:Name="InsertTeamButton" Grid.Column="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickTeamButton">Insert Team</Button>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="InsertTeamButton" Grid.Column="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickTeamButton">Insert Team</Button>
+            <Button x:Name="InsertResultsButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickResultsButton">Insert Results</Button>
+        </Grid>
     </Grid>
 </UserControl>

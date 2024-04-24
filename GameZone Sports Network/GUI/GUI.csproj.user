@@ -2,34 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <ApplicationDefinition Update="App.xaml">
+    <Page Update="App.xaml">
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="CountBox.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Insert Tab\InsertControl.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Insert Tab\InsertPlayerWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Insert Tab\InsertTeamWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="StandingsTable.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UpdateControl.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="WeekMatchupsControl.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
+    </Page>
     <Page Update="CountBox.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -42,19 +17,34 @@
     <Page Update="Insert Tab\InsertTeamWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Insert Tab\ResultInsertWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PlayerUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PlayerUpdateInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StandingsTable.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="StatsFolder\DefensiveStatsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatsFolder\OffensiveStatsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatsFolder\SpecialTeamsStatsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="TopButtonBar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UpdateControl.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="WeekMatchupsControl.xaml">
+    <Page Update="UpdateTab\UpdateControl.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
