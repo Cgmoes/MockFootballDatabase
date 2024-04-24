@@ -6,7 +6,8 @@ CREATE OR ALTER PROCEDURE League.SavePlayer
 	@JerseyNumber INT,
 	@CollegeName NVARCHAR(32),
 	@HomeState NVARCHAR(32),
-	@Height INT
+	@Height INT,
+	@TeamID INT
 AS
 
 UPDATE League.Player
@@ -16,5 +17,6 @@ SET PositionID = @PositionID,
     JerseyNumber = @JerseyNumber,
     CollegeName = @CollegeName,
     HomeState = @HomeState,
-    Height = @Height
+    Height = @Height,
+	TeamID = @TeamID
 WHERE PlayerName = @PlayerName;

@@ -11,6 +11,8 @@ BEGIN
 		CollegeName NVARCHAR(32) NOT NULL,
 		HomeState NVARCHAR(32) NOT NULL,
 		Height INT NOT NULL,
+		TeamID INT NOT NULL FOREIGN KEY
+			REFERENCES League.Team(TeamID),
 
 		CHECK(PlayerName > N'' OR Position > N'' OR CollegeName > N'' OR HomeState > N'')
 	)

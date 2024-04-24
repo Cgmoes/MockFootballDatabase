@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GameZone Sports Network\Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="img\Projectpic1.JPG" />
   </ItemGroup>
 

@@ -16,12 +16,29 @@ namespace GameZone_Sports_Network
     {
         private readonly string connectionString;
 
+        /// <summary>
+        /// Constructor for the class
+        /// </summary>
+        /// <param name="connectionString">the connection information to the database</param>
         public SqlPlayerRepository(string connectionString)
         {
             this.connectionString = connectionString;
         }
 
-        public Player CreatePlayer(string name, int posID, string pos, int age, int jerseyNum, string college, string state, int height) 
+        /// <summary>
+        /// Creates a player to add to the database
+        /// </summary>
+        /// <param name="name">The name of the player</param>
+        /// <param name="posID">The position ID of the player</param>
+        /// <param name="pos">The position of the player</param>
+        /// <param name="age">The age of the player</param>
+        /// <param name="jerseyNum">The player's number</param>
+        /// <param name="college">The player's alma mater</param>
+        /// <param name="state">The state where the player is from</param>
+        /// <param name="height">The height of the player in inches</param>
+        /// <param name="teamID">the ID of the team the player is on</param>
+        /// <returns>The player that was created</returns>
+        public Player CreatePlayer(string name, int posID, string pos, int age, int jerseyNum, string college, string state, int height, int teamID) 
         {
             using (var transaction = new TransactionScope()) 
             {
@@ -39,9 +56,7 @@ namespace GameZone_Sports_Network
                         command.Parameters.AddWithValue("CollegeName", college);
                         command.Parameters.AddWithValue("HomeState", state);
                         command.Parameters.AddWithValue("Height", height);
-
-                        var p = command.Parameters.AddWithValue("PlayerID", SqlDbType.Int);
-                        p.Direction = ParameterDirection.Output;
+                        command.Parameters.AddWithValue("TeamID", teamID);
 
                         connection.Open();
                         
@@ -49,14 +64,18 @@ namespace GameZone_Sports_Network
 
                         transaction.Complete();
 
-                        var personID = (int)command.Parameters["PersonID"].Value;
-
-                        return new Player(personID, name, posID, pos, age, jerseyNum, college, state, height);
+                        return new Player(name, posID, pos, age, jerseyNum, college, state, height, teamID);
                     }
                 }
             }
         }
 
+        /// <summary>
+        /// Gets a player by their name
+        /// </summary>
+        /// <param name="name">The name of the player to find</param>
+        /// <returns>The player with that name</returns>
+        /// <exception cref="RecordNotFoundException">Thrown if the player with that name doesn't exist</exception>
         public Player GetPlayer(string name) 
         {
             using (var connection = new SqlConnection(connectionString)) 
@@ -83,7 +102,6 @@ namespace GameZone_Sports_Network
 
         private Player? TranslatePlayer(SqlDataReader reader) 
         {
-            var playerIdOrdinal = reader.GetOrdinal("PlayerID");
             var nameOrdinal = reader.GetOrdinal("PlayerName");
             var positionIdOrdinal = reader.GetOrdinal("PositionID");
             var positionOrdinal = reader.GetOrdinal("Position");
@@ -92,11 +110,11 @@ namespace GameZone_Sports_Network
             var collegeNameOrdinal = reader.GetOrdinal("CollegeName");
             var homeStateOrdinal = reader.GetOrdinal("HomeState");
             var heightOrdinal = reader.GetOrdinal("Height");
+            var teamOrdinal = reader.GetOrdinal("TeamID");
 
             if (!reader.Read()) return null;
 
             return new Player(
-                reader.GetInt32(playerIdOrdinal),
                 reader.GetString(nameOrdinal),
                 reader.GetInt32(positionIdOrdinal),
                 reader.GetString(positionOrdinal),
@@ -104,7 +122,8 @@ namespace GameZone_Sports_Network
                 reader.GetInt32(jerseyNumberOrdinal),
                 reader.GetString(collegeNameOrdinal),
                 reader.GetString(homeStateOrdinal),
-                reader.GetInt32(heightOrdinal)
+                reader.GetInt32(heightOrdinal),
+                reader.GetInt32(teamOrdinal)
                 );
         }
     }

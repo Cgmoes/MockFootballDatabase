@@ -14,11 +14,22 @@ namespace GameZone_Sports_Network
     {
         private readonly string connectionString;
 
+        /// <summary>
+        /// Constructor for the class
+        /// </summary>
+        /// <param name="connectionString">the connection information to the database</param>
         public SqlTeamRepository(string connectionString) 
         {
             this.connectionString = connectionString;
         }
 
+        /// <summary>
+        /// Creates a team to put into the database
+        /// </summary>
+        /// <param name="name">The team's name</param>
+        /// <param name="city">the team's city</param>
+        /// <param name="year">the year the team was established</param>
+        /// <returns>The team that was created</returns>
         public Team CreateTeam(string name, string city, int year) 
         {
             using (var transaction = new TransactionScope()) 
@@ -33,18 +44,13 @@ namespace GameZone_Sports_Network
                         command.Parameters.AddWithValue("TeamCity", city);
                         command.Parameters.AddWithValue("YearEstablished", year);
 
-                        var t = command.Parameters.Add("TeamID", SqlDbType.Int);
-                        t.Direction = ParameterDirection.Output;
-
                         connection.Open();
 
                         command.ExecuteNonQuery();
 
                         transaction.Complete();
 
-                        var teamId = (int)command.Parameters["TeamID"].Value;
-
-                        return new Team(teamId, name, city, year);
+                        return new Team(name, city, year);
                     }
                 }
             }

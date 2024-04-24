@@ -8,7 +8,7 @@ namespace Data.Models
 {
     public class Player
     {
-        public int PlayerID { get; }
+        public int TeamID { get; }
         public string PlayerName { get; }
         public int PositionID { get; }
         public string Positions { get; }
@@ -18,9 +18,8 @@ namespace Data.Models
         public string HomeState { get; }
         public int Height { get; }
 
-        public Player(int playerID, string playerName, int positionID, string positions, int age, int jerseyNumber, string collegeName, string homeState, int height)
+        public Player(string playerName, int positionID, string positions, int age, int jerseyNumber, string collegeName, string homeState, int height, int teamID)
         {
-            PlayerID = playerID;
             PlayerName = playerName;
             Positions = positions;
             Age = age;
@@ -28,6 +27,7 @@ namespace Data.Models
             CollegeName = collegeName;
             HomeState = homeState;
             Height = height;
+            TeamID = teamID;
         }
     }
 }
