@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-                Title="Edit Stats" Height="600" Width="350">
+                Title="Offense" Height="600" Width="350">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition/>

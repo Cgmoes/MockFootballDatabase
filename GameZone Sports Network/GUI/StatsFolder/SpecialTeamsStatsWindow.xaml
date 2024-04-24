@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="SpecialTeamsStatsWindow" Height="300" Width="350">
+        Title="Special Teams " Height="300" Width="350">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition/>
