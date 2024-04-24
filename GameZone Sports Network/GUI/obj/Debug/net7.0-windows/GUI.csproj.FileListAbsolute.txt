@@ -46,3 +46,41 @@ C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\n
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
+C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.exe
+C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.deps.json
+C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
+C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.dll
+C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.pdb
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\TopButtonBar.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\App.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI_MarkupCompile.cache
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI_MarkupCompile.lref
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\TopButtonBar.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.g.resources
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.sourcelink.json
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.dll
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\CountBox.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\WeekMatchupsControl.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\CountBox.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\WeekMatchupsControl.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertControl.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertPlayerWindow.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertControl.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertPlayerWindow.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.baml
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateControl.g.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateControl.baml

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="GUI.InsertControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="InsertPlayerButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickPlayerButton">Insert player</Button>
+        <Button x:Name="InsertTeamButton" Grid.Column="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickTeamButton">Insert Team</Button>
+    </Grid>
+</UserControl>

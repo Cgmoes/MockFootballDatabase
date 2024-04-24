@@ -1,0 +1,62 @@
+﻿<Window x:Class="GUI.InsertPlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Create a Player" Height="550" Width="350">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+			<RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="30">Create a Player:</TextBlock>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="12">Name:</TextBlock>
+            <TextBox Width="194" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Position Role:</TextBlock>
+            <ComboBox Height="17" Width="106"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Position:</TextBlock>
+            <ComboBox Height="17" Width="106"></ComboBox>
+        </StackPanel>
+		<StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
+			<TextBlock FontSize="15" Margin="13">Team:</TextBlock>
+			<ComboBox Height="17" Width="106"></ComboBox>
+		</StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Age:</TextBlock>
+            <TextBox Width="57" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Jersey Number:</TextBlock>
+            <TextBox Width="57" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">College Name:</TextBlock>
+            <TextBox Width="211" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Home State:</TextBlock>
+            <TextBox Width="45" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="9" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Height:</TextBlock>
+            <TextBox Width="45" Height="17"/>
+        </StackPanel>
+        <Button Name="SubmitButtonPlayer" Grid.Row="10" FontSize="17" Margin="31,10,220,10" Click="SubmitClick">Submit</Button>
+    </Grid>
+</Window>

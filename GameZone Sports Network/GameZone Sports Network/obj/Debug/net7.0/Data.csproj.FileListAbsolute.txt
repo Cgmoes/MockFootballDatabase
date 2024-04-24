@@ -3,3 +3,8 @@ C:\MockEspn\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Dat
 C:\MockEspn\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.AssemblyInfo.cs
 C:\MockEspn\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache
 C:\MockEspn\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.sourcelink.json
+C:\GZSN Tavle\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\GZSN Tavle\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.AssemblyInfoInputs.cache
+C:\GZSN Tavle\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.AssemblyInfo.cs
+C:\GZSN Tavle\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache
+C:\GZSN Tavle\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.sourcelink.json

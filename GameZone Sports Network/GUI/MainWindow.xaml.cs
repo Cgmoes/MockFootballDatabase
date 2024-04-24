@@ -19,6 +19,31 @@ namespace GUI
         public MainWindow()
         {
             InitializeComponent();
+            TopBar.OnClick += ClickTopButton!;
+        }
+        public void ClickTopButton(object sender, CustomEventArgs e)
+        {
+            if(e.Name == "InsertButton")
+            {
+                HideVisibilites();
+                StandingsTable.Visibility = Visibility.Hidden;
+                InsertControl.Visibility = Visibility.Visible;
+            }
+            if (e.Name == "HomeButton")
+            {
+                HideVisibilites();
+                StandingsTable.Visibility = Visibility.Visible;
+            }
+            if (e.Name == "UpdateButton")
+            {
+                HideVisibilites();
+                UpdateControl.Visibility = Visibility.Visible;
+            }
+    }
+        private void HideVisibilites()
+        {
+            InsertControl.Visibility = Visibility.Hidden;
+            UpdateControl.Visibility = Visibility.Hidden;
         }
     }
 }

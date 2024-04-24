@@ -24,5 +24,29 @@ namespace GUI
         {
             InitializeComponent();
         }
+        public EventHandler<CustomEventArgs>? OnClick;
+        public void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            if(sender is Button b)
+            {
+                if(b.Name == "InsertButton")
+                {
+                    
+                    OnClick?.Invoke(this, new CustomEventArgs(b.Name));
+                }
+                if (b.Name == "UpdateButton")
+                {
+                    OnClick?.Invoke(this, new CustomEventArgs(b.Name));
+                }
+                if (b.Name == "HomeButton")
+                {
+                    OnClick?.Invoke(this, new CustomEventArgs(b.Name));
+                }
+                if (b.Name == "SearchButton")
+                {
+                    OnClick?.Invoke(this, new CustomEventArgs(b.Name));
+                }
+            }
+        }
     }
 }

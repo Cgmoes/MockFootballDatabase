@@ -7,10 +7,54 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="CountBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Insert Tab\InsertControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Insert Tab\InsertPlayerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Insert Tab\InsertTeamWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandingsTable.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WeekMatchupsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CountBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Insert Tab\InsertControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Insert Tab\InsertPlayerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Insert Tab\InsertTeamWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="StandingsTable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="TopButtonBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WeekMatchupsControl.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

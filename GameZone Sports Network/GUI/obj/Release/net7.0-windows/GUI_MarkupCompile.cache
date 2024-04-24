@@ -1,0 +1,20 @@
+﻿GUI
+
+
+winexe
+C#
+.cs
+C:\GZSN Tavle\GameZone Sports Network\GUI\obj\Release\net7.0-windows\
+GUI
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+C:\GZSN Tavle\GameZone Sports Network\GUI\App.xaml
+9-1556096617
+
+13-1524538095
+198746682509
+CountBox.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;MainWindow.xaml;StandingsTable.xaml;TopButtonBar.xaml;UpdateControl.xaml;WeekMatchupsControl.xaml;
+
+True
+

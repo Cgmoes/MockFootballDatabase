@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="GUI.UpdateControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="UpdateTeamButton" Grid.Column="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update Team</Button>
+            <Button x:Name="UpdateResultsButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update Results</Button>
+        </Grid>
+        <Button x:Name="UpdatePlayerButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update player</Button>
+    </Grid>
+</UserControl>
