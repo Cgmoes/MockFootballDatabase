@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="SpecialTeamsStatsWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="SpecialTeamsStatsWindow" Height="300" Width="350">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="30">Edit Special Team Stats:</TextBlock>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="12">Field Goal Attempts:</TextBlock>
+            <TextBox Width="66" Height="19"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Field Goals Made:</TextBlock>
+            <TextBox Width="66" Height="19"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Punts:</TextBlock>
+            <TextBox Width="66" Height="19"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Punt Yards</TextBlock>
+            <TextBox Width="66" Height="19"/>
+        </StackPanel>
+        <Button Name="SubmitButtonSpecialTeamStats" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
     </Grid>
 </Window>

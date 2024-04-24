@@ -20,7 +20,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock FontSize="30">Create a Player:</TextBlock>
+        <TextBlock FontSize="30">Update Player:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Name:</TextBlock>
             <TextBox Width="194" Height="17"/>
