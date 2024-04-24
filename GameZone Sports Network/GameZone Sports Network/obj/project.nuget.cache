@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "TBKXbClLe5Ykn71I//QW5b0MBgr86+1c86vtY0cbc2DBxYCY2Hn2+upwF34IVJEteWLO+2X8y2e2CtGWthZLTQ==",
+  "dgSpecHash": "kfcmINajt+YAi/EhcBSbXnNkEGFF3lIb85IcNfuMIqmVeR9K9bzr99AYUBUb3IxJeNq0oRCWw7Oz4A8dp7Zc3A==",
   "success": true,
-  "projectFilePath": "C:\\GZSN Tavle\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cgmoe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\cgmoe\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

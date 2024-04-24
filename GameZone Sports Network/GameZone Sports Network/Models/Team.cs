@@ -9,11 +9,11 @@ namespace Data.Models
     public class Team
     {
         public int TeamID { get; }
-        public TeamNames TeamName { get; }
+        public string TeamName { get; }
         public string TeamCity { get; }
-        public string YearEstablished { get; }
+        public int YearEstablished { get; }
 
-        public Team(int teamID, TeamNames teamName, string teamCity, string yearEstablished)
+        public Team(int teamID, string teamName, string teamCity, int yearEstablished)
         {
             TeamID = teamID;
             TeamName = teamName;

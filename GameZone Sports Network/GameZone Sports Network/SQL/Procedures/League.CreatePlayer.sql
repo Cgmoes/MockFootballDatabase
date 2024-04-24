@@ -1,5 +1,6 @@
 CREATE OR ALTER PROCEDURE League.CreatePlayer
    @PlayerName NVARCHAR(32),
+   @PositionID INT,
    @Position NVARCHAR(32),
    @Age INT,
    @JerseyNumber INT,
@@ -8,6 +9,6 @@ CREATE OR ALTER PROCEDURE League.CreatePlayer
    @Height INT
 AS
 
-INSERT League.Player(PlayerName, Position, Age, JerseyNumber, CollegeName, HomeState, Height)
-VALUES(@PlayerName, @Position, @Age, @JerseyNumber, @CollegeName, @HomeState, @Height);
+INSERT League.Player(PlayerName, PositionID, Position, Age, JerseyNumber, CollegeName, HomeState, Height)
+VALUES(@PlayerName, @PositionID, @Position, @Age, @JerseyNumber, @CollegeName, @HomeState, @Height);
 GO

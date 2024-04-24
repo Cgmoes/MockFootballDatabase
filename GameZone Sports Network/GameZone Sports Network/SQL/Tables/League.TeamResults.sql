@@ -1,0 +1,11 @@
+IF OBJECT_ID(N'League.TeamResults') IS NULL
+BEGIN
+	CREATE TABLE League.TeamResults
+	(
+		TeamResultsID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		ResultID INT NOT NULL FOREIGN KEY
+			REFERENCES League.Results(ResultID),
+		TeamID INT NOT NULL FOREIGN KEY
+			REFERENCES League.Team(TeamID)
+	)
+END;
