@@ -16,6 +16,7 @@ namespace GUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        public EventHandler<RoutedEventArgs>? ShutdownVisibility;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,12 +39,15 @@ namespace GUI
             {
                 HideVisibilites();
                 UpdateControl.Visibility = Visibility.Visible;
+                UpdateControl.PlayerUpdateControl.PlayerInfo.Visibility = Visibility.Hidden;
             }
     }
         private void HideVisibilites()
         {
             InsertControl.Visibility = Visibility.Hidden;
             UpdateControl.Visibility = Visibility.Hidden;
+            UpdateControl.PlayerUpdateControl.Visibility = Visibility.Hidden;
+            UpdateControl.PlayerUpdateControl.PlayerInfo.Visibility = Visibility.Hidden;
         }
     }
 }

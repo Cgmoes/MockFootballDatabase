@@ -20,9 +20,25 @@ namespace GUI
     /// </summary>
     public partial class PlayerUpdate : UserControl
     {
+        public EventHandler<RoutedEventArgs>? GoBack;
         public PlayerUpdate()
         {
             InitializeComponent();
+        }
+        public void ClickBack(object sender, RoutedEventArgs e)
+        {
+            GoBack?.Invoke(this, e);
+            PlayerInfo.Visibility = Visibility.Hidden;
+        }
+        public void SubmitButton(object sender, RoutedEventArgs e)
+        {
+            /*
+            if(PlayerInfo.DataContext != null)
+            {
+
+            }
+            */
+            PlayerInfo.Visibility = Visibility.Visible; 
         }
     }
 }

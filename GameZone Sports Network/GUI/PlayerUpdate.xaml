@@ -17,14 +17,17 @@
                 <RowDefinition/>
                 <RowDefinition Height=".3*"/>
             </Grid.RowDefinitions>
-            <TextBlock FontSize="35" FontWeight="Black" TextAlignment="Center">Players:</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Button FontSize="10" FontWeight="Black" Height="27" VerticalAlignment="Top" Width="34" Click="ClickBack">Back</Button>
+                <TextBlock FontSize="35" FontWeight="Black" HorizontalAlignment="Center" Margin="9" TextAlignment="Center">Players:</TextBlock>
+            </StackPanel>
             <ListBox Grid.Row="1"></ListBox>
             <StackPanel Orientation="Horizontal" Grid.Row="2">
                 <TextBlock Margin="17" FontSize="15" Height="25">Search Player:</TextBlock>
                 <TextBox Width="155" Height="17"></TextBox>
-                <Button Content="Submit" Width="75" Height="17" />
+                <Button Click="SubmitButton" Content="Submit" Width="75" Height="17" />
             </StackPanel>
         </Grid>
-        <local:PlayerUpdateInfo Grid.Column="1" Visibility="Hidden"/>
+        <local:PlayerUpdateInfo x:Name="PlayerInfo"  Grid.Column="1" Visibility="Hidden"/>
     </Grid>
 </UserControl>

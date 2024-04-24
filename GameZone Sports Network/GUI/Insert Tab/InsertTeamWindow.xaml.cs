@@ -38,7 +38,7 @@ namespace GUI
             int year = int.Parse(yearEstablished);
 
             string connetionString = "Data Source=(localdb)\\MSSQLLocalDb;Initial Catalog=MockESPN;Integrated Security=True";
-
+           
             SqlTeamRepository s = new SqlTeamRepository(connetionString);
             s.CreateTeam(teamName, teamCity, year);
         }

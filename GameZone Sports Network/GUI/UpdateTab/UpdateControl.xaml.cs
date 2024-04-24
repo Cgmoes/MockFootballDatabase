@@ -23,6 +23,15 @@ namespace GUI
         public UpdateControl()
         {
             InitializeComponent();
+            PlayerUpdateControl.GoBack += CloseWindow!;
+        }
+        public void ClickPlayerUpdate(object sender, RoutedEventArgs e)
+        {
+            PlayerUpdateControl.Visibility = Visibility.Visible;
+        }
+        public void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            PlayerUpdateControl.Visibility = Visibility.Hidden;
         }
     }
 }
