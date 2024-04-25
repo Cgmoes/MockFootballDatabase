@@ -9,12 +9,12 @@ GUI
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-
-15-1744605432
+C:\Database Final\GameZone Sports Network\GUI\App.xaml
+14757378340
 
 20-1667143263
 200-1398866009
-App.xaml;CountBox.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;PlayerUpdate.xaml;PlayerUpdateInfo.xaml;StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\UpdateControl.xaml;
+CountBox.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;PlayerUpdate.xaml;PlayerUpdateInfo.xaml;StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\UpdateControl.xaml;
 
-False
+True
 

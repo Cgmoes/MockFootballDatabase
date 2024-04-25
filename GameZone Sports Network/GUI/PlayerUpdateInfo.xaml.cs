@@ -24,5 +24,70 @@ namespace GUI
         {
             InitializeComponent();
         }
+        private OffensiveStatsWindow _setOffense = new OffensiveStatsWindow();
+        public OffensiveStatsWindow OffensiveStatsWindow
+        {
+            get
+            {
+                return _setOffense;
+            }
+            set
+            {
+                _setOffense = value;
+            }
+        }
+        private DefensiveStatsWindow _setDefense = new DefensiveStatsWindow();
+        public DefensiveStatsWindow DefensiveStatsWindow
+        {
+            get
+            {
+                return _setDefense;
+            }
+            set
+            {
+                _setDefense = value;
+            }
+        }
+        private SpecialTeamsStatsWindow _setSpecial = new SpecialTeamsStatsWindow();
+        public SpecialTeamsStatsWindow SpecialTeamsStatsWindow
+        {
+            get
+            {
+                return _setSpecial ;
+            }
+            set
+            {
+                _setSpecial = value;
+            }
+        }
+        public void ClickEditStatssButton(object sender, RoutedEventArgs e)
+        {
+            //if(DataContext. == 1) { }
+            SpecialTeamsStatsWindow r = new SpecialTeamsStatsWindow();
+            r.Show();
+            SpecialTeamsStatsWindow = r;
+            checkButton();
+        }
+        public void SubmitCloseEvent(object sender, CustomEventArgs e)
+        {
+            if (e.Name == "SubmitButtonOffensiveStats")
+            {
+                OffensiveStatsWindow.Close();
+            }
+            if (e.Name == "SubmitButtonDefensiveStats")
+            {
+                DefensiveStatsWindow.Close();
+            }
+            if (e.Name == "SubmitButtonSpecialTeamStats")
+                {
+                    SpecialTeamsStatsWindow.Close();
+            }
+        }
+        private void checkButton()
+        {
+            OffensiveStatsWindow.SubmitClose += SubmitCloseEvent!;
+            DefensiveStatsWindow.SubmitClose += SubmitCloseEvent!;
+            SpecialTeamsStatsWindow.SubmitClose += SubmitCloseEvent!;
+        }
     }
 }

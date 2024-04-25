@@ -33,6 +33,6 @@
             <TextBlock FontSize="15" Margin="13">Punt Yards</TextBlock>
             <TextBox Width="66" Height="19"/>
         </StackPanel>
-        <Button Name="SubmitButtonSpecialTeamStats" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
+        <Button Name="SubmitButtonSpecialTeamStats" Click="SubmitClick" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
     </Grid>
 </Window>

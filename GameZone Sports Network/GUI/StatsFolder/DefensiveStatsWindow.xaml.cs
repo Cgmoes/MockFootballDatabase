@@ -23,5 +23,15 @@ namespace GUI
         {
             InitializeComponent();
         }
+        public event EventHandler<CustomEventArgs>? SubmitClose;
+
+        public void SumbitClick(object sender, EventArgs e)
+        {
+            if(sender is Button b)
+            {
+                SubmitClose?.Invoke(this, new CustomEventArgs(b.Name));
+            }
+        }
+
     }
 }

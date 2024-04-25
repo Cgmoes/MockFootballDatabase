@@ -1,12 +1,17 @@
-﻿
+﻿C:\Database Final\GameZone Sports Network\GUI\obj\Release\net7.0-windows\GeneratedInternalTypeHelper.g.cs
 
-FC:\GZSN Tavle\GameZone Sports Network\GUI\CountBox.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\MainWindow.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\StandingsTable.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\TopButtonBar.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\WeekMatchupsControl.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\Insert Tab\InsertControl.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\Insert Tab\InsertPlayerWindow.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\Insert Tab\InsertTeamWindow.xaml;;
-FC:\GZSN Tavle\GameZone Sports Network\GUI\UpdateControl.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\CountBox.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\Insert Tab\InsertControl.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\Insert Tab\InsertPlayerWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\Insert Tab\InsertTeamWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\Insert Tab\ResultInsertWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\MainWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\PlayerUpdate.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\PlayerUpdateInfo.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\StandingsTable.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\StatsFolder\DefensiveStatsWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\StatsFolder\OffensiveStatsWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\StatsFolder\SpecialTeamsStatsWindow.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\TopButtonBar.xaml;;
+FC:\Database Final\GameZone Sports Network\GUI\UpdateTab\UpdateControl.xaml;;
 
