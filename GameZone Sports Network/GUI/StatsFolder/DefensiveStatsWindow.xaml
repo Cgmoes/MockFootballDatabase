@@ -44,6 +44,6 @@
             <TextBox Width="66" Height="19"/>
         </StackPanel>
 
-        <Button Name="SubmitButtonDefensiveStats" Click="SubmitClick" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
+        <Button Name="SubmitButtonDefensiveStats" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
     </Grid>
 </Window>

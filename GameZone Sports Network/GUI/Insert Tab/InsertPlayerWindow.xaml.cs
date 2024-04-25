@@ -24,6 +24,10 @@ namespace GUI
         public InsertPlayerWindow()
         {
             InitializeComponent();
+
+            string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+            SqlTeamRepository s = new SqlTeamRepository(connectionString);
+           // team.DataContext = s.RetrieveTeams();
         }
 
         private void SubmitClick(object sender, RoutedEventArgs e)

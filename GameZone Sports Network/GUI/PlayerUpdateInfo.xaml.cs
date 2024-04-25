@@ -85,7 +85,7 @@ namespace GUI
         }
         private void checkButton()
         {
-            OffensiveStatsWindow.SubmitClose += SubmitCloseEvent!;
+            //OffensiveStatsWindow.SubmitClose += SubmitCloseEvent!;
             DefensiveStatsWindow.SubmitClose += SubmitCloseEvent!;
             SpecialTeamsStatsWindow.SubmitClose += SubmitCloseEvent!;
         }

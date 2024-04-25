@@ -55,5 +55,41 @@ namespace GameZone_Sports_Network
                 }
             }
         }
+
+        /*
+        public IReadOnlyList<Team> RetrieveTeams() 
+        {
+            using (var connection = new SqlConnection(connectionString)) 
+            {
+                using (var command = new SqlCommand("League.RetrieveTeams", connection)) 
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader()) return TranslateTeams(reader);
+                }
+            }
+        }
+
+        private IReadOnlyList<Team> TranslateTeams(SqlDataReader reader) 
+        {
+            var teams = new List<Team>();
+
+            var teamNameOrdinal = reader.GetOrdinal("TeamName");
+            var teamCityOrdinal = reader.GetOrdinal("TeamCity");
+            var yearEstablishedOrdinal = reader.GetOrdinal("YearEstablished");
+
+            while (reader.Read()) 
+            {
+                teams.Add(new Team(
+                    reader.GetString(teamNameOrdinal),
+                    reader.GetString(teamCityOrdinal),
+                    reader.GetInt32(yearEstablishedOrdinal)));
+            }
+
+            return teams;
+        }
+        */
     }
 }
