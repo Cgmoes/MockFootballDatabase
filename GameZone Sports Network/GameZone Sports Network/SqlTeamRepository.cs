@@ -56,9 +56,9 @@ namespace GameZone_Sports_Network
             }
         }
 
-        /*
-        public IReadOnlyList<Team> RetrieveTeams() 
+        public IReadOnlyList<string> RetrieveTeams() 
         {
+            List<string> teamNames = new List<string>();
             using (var connection = new SqlConnection(connectionString)) 
             {
                 using (var command = new SqlCommand("League.RetrieveTeams", connection)) 
@@ -67,29 +67,17 @@ namespace GameZone_Sports_Network
 
                     connection.Open();
 
-                    using (var reader = command.ExecuteReader()) return TranslateTeams(reader);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string teamName = reader["TeamName"].ToString();
+                            teamNames.Add(teamName);
+                        }
+                    }
                 }
             }
+            return teamNames;
         }
-
-        private IReadOnlyList<Team> TranslateTeams(SqlDataReader reader) 
-        {
-            var teams = new List<Team>();
-
-            var teamNameOrdinal = reader.GetOrdinal("TeamName");
-            var teamCityOrdinal = reader.GetOrdinal("TeamCity");
-            var yearEstablishedOrdinal = reader.GetOrdinal("YearEstablished");
-
-            while (reader.Read()) 
-            {
-                teams.Add(new Team(
-                    reader.GetString(teamNameOrdinal),
-                    reader.GetString(teamCityOrdinal),
-                    reader.GetInt32(yearEstablishedOrdinal)));
-            }
-
-            return teams;
-        }
-        */
     }
 }

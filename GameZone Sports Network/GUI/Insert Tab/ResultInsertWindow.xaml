@@ -23,19 +23,19 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="18">Home Team:</TextBlock>
-            <ComboBox Height="20" Width="184"></ComboBox>
+            <ComboBox Name="homeTeamBox" Height="20" Width="184"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="18">Away Team:</TextBlock>
-            <ComboBox Height="20" Width="184"></ComboBox>
+            <ComboBox Name="awayTeamBox" Height="20" Width="184"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="17">Home Team Points:</TextBlock>
-            <TextBox Width="44" Height="18"></TextBox>
+            <TextBox Name="homeTeamPointsBox" Width="44" Height="18"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="17">Away Team Points:</TextBlock>
-            <TextBox Width="44" Height="18"></TextBox>
+            <TextBox Name="awayTeamPointsBox" Width="44" Height="18"></TextBox>
         </StackPanel>
         <Button Name="SubmitButtonResults" Grid.Row="5" FontSize="17" Margin="31,0,240,0" Height="26" VerticalAlignment="Center" Click="SubmitClick">Submit</Button>
     </Grid>

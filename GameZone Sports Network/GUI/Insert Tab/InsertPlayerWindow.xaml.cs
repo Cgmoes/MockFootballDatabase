@@ -27,7 +27,15 @@ namespace GUI
 
             string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
             SqlTeamRepository s = new SqlTeamRepository(connectionString);
-           // team.DataContext = s.RetrieveTeams();
+            populateTeams(s);
+        }
+
+        private void populateTeams(SqlTeamRepository s) 
+        {
+            foreach (string teamName in s.RetrieveTeams())
+            {
+                team.Items.Add(teamName);
+            }
         }
 
         private void SubmitClick(object sender, RoutedEventArgs e)
