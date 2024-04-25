@@ -22,30 +22,6 @@ C:\MockEspn\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
 C:\MockEspn\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
 C:\MockEspn\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 C:\MockEspn\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.exe
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.deps.json
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.pdb
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\TopButtonBar.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\App.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI_MarkupCompile.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI_MarkupCompile.lref
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\TopButtonBar.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.g.resources
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.sourcelink.json
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
 C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.exe
 C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.deps.json
 C:\GZSN Tavle\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
@@ -132,26 +108,6 @@ C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GUI\bin\Debug\net7.
 C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\Data.dll
 C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\Data.pdb
 C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.Up2Date
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\Data.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\Data.pdb
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\CountBox.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertControl.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertPlayerWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\CountBox.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertControl.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertPlayerWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.csproj.Up2Date
 C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.exe
 C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.deps.json
 C:\Database Final\GameZone Sports Network\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
@@ -210,17 +166,3 @@ C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GU
 C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
 C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 C:\Database Final\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\ResultInsertWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdate.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdateInfo.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\DefensiveStatsWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\OffensiveStatsWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\SpecialTeamsStatsWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\UpdateControl.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\ResultInsertWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdate.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\PlayerUpdateInfo.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\DefensiveStatsWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\OffensiveStatsWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\SpecialTeamsStatsWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\UpdateControl.baml

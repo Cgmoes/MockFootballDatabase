@@ -44,19 +44,24 @@ namespace GameZone_Sports_Network
                         command.Parameters.AddWithValue("TeamCity", city);
                         command.Parameters.AddWithValue("YearEstablished", year);
 
+                        var t = command.Parameters.Add("TeamID", SqlDbType.Int);
+                        t.Direction = ParameterDirection.Output;
+
                         connection.Open();
+
 
                         command.ExecuteNonQuery();
 
                         transaction.Complete();
 
-                        return new Team(name, city, year);
+                        var teamId = (int)command.Parameters["TeamID"].Value;
+                        return new Team(teamId, name, city, year);
                     }
                 }
             }
         }
 
-        public IReadOnlyList<string> RetrieveTeams() 
+        public IReadOnlyList<string> RetrieveTeamNames() 
         {
             List<string> teamNames = new List<string>();
             using (var connection = new SqlConnection(connectionString)) 

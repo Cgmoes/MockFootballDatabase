@@ -47,7 +47,7 @@ namespace GUI
 
         private void populateTeams(SqlTeamRepository s)
         {
-            foreach (string teamName in s.RetrieveTeams())
+            foreach (string teamName in s.RetrieveTeamNames())
             {
                 homeTeamBox.Items.Add(teamName);
                 awayTeamBox.Items.Add(teamName);

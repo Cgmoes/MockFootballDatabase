@@ -18,7 +18,7 @@ namespace GameZone_Sports_Network
             this.connectionString = connectionString;
         }
 
-        public void CreateResults(int week, string teamPlayed, int pointsScored, int pointsAgainst) 
+        public void CreateResults(int week, string homeTeam, string teamPlayed, int pointsScored, int pointsAgainst) 
         {
             using (var transaction = new TransactionScope()) 
             { 
@@ -30,6 +30,7 @@ namespace GameZone_Sports_Network
 
                         command.Parameters.AddWithValue("WeekNumber", week);
                         command.Parameters.AddWithValue("TeamPlayed", teamPlayed);
+                        command.Parameters.AddWithValue("TeamPlayed", homeTeam);
                         command.Parameters.AddWithValue("PointsScored", pointsScored);
                         command.Parameters.AddWithValue("PointsAgainst", pointsAgainst);
 

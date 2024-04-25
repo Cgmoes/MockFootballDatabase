@@ -21,19 +21,6 @@ C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GameZone Sports Net
 C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\refint\Data.dll
 C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.pdb
 C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\ref\Data.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\bin\Debug\net7.0\Data.deps.json
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\bin\Debug\net7.0\Data.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\bin\Debug\net7.0\Data.pdb
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.csproj.AssemblyReference.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.AssemblyInfoInputs.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.AssemblyInfo.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.sourcelink.json
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\refint\Data.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\Data.pdb
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GameZone Sports Network\obj\Debug\net7.0\ref\Data.dll
 C:\Database Final\GameZone Sports Network\GameZone Sports Network\bin\Debug\net7.0\Data.deps.json
 C:\Database Final\GameZone Sports Network\GameZone Sports Network\bin\Debug\net7.0\Data.dll
 C:\Database Final\GameZone Sports Network\GameZone Sports Network\bin\Debug\net7.0\Data.pdb

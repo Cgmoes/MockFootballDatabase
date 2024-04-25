@@ -32,7 +32,7 @@ namespace GUI
 
         private void populateTeams(SqlTeamRepository s) 
         {
-            foreach (string teamName in s.RetrieveTeams())
+            foreach (string teamName in s.RetrieveTeamNames())
             {
                 team.Items.Add(teamName);
             }
