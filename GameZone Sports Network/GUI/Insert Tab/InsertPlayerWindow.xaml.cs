@@ -1,4 +1,6 @@
-﻿using GameZone_Sports_Network;
+﻿using Data.Models;
+using GameZone_Sports_Network;
+using GameZone_Sports_Network.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,20 +23,50 @@ namespace GUI
     public partial class InsertPlayerWindow : Window
     {
         public event EventHandler<CustomEventArgs>? SubmitClose;
+        public static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        public SqlTeamRepository t = new SqlTeamRepository(connectionString);
         public InsertPlayerWindow()
         {
             InitializeComponent();
-
-            string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
-            SqlTeamRepository s = new SqlTeamRepository(connectionString);
-            populateTeams(s);
+            PopulateTeams(t);
+            PopulatePositions();
         }
-
-        private void populateTeams(SqlTeamRepository s) 
+        private void PopulatePositions()
         {
-            foreach (string teamName in s.RetrieveTeamNames())
+            positionrole.Items.Add("Offense");
+            positionrole.Items.Add("Defense");
+            positionrole.Items.Add("Special Teams");
+        }
+        public void PositionChangedEvent(object sender, SelectionChangedEventArgs e)
+        {
+            if(positionRole.Text == "Offense")
             {
-                team.Items.Add(teamName);
+                foreach (string p in Enum.GetValues(typeof(OffensivePositions)))
+                {
+                    position.Items.Add(p);
+                }
+            }
+            if (positionRole.Text == "Defense")
+            {
+                foreach (string p in Enum.GetValues(typeof(DefensivePositions)))
+                {
+                    position.Items.Add(p);
+                }
+            }
+            if (positionRole.Text == "Special Teams")
+            {
+                foreach (string p in Enum.GetValues(typeof(SpecialPositions)))
+                {
+                    position.Items.Add(p);
+                }
+            }
+            position.Enabled = true;
+        }
+        private void PopulateTeams(SqlTeamRepository s) 
+        {
+            foreach (string teamz in s.RetrieveTeamNames())
+            {
+                team.Items.Add(teamz);
             }
         }
 
@@ -44,7 +76,7 @@ namespace GUI
             {
                 SubmitClose?.Invoke(sender, new CustomEventArgs(b.Name));
             }
-            /*
+            
             string name = playerName.Text;
             int posID = 0;
             if (positionRole.Name == "Offense")
@@ -64,14 +96,15 @@ namespace GUI
             int jerseyNum = int.Parse(jersey.Text);
             string col = college.Text;
             string homeState = state.Text;
-            int hi = int.Parse(age.Text);
-            //still need to add a team ID
+            int hei = int.Parse(height.Text);
+            string playerTeam = team.Text;
+            Team teams = t.GetTeam(playerTeam);
 
             string connetionString = "Data Source=(localdb)\\MSSQLLocalDb;Initial Catalog=MockESPN;Integrated Security=True";
 
             SqlPlayerRepository s = new SqlPlayerRepository(connetionString);
-            //s.CreatePlayer(name, posID, pos, ages, jerseyNum, col,homeState, age, )
-            */
+            s.CreatePlayer(name, posID, pos, ages, jerseyNum, col, homeState, hei, teams.TeamID);
+            
         }
     }
 }

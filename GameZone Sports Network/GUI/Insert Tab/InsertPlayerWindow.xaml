@@ -27,11 +27,11 @@
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Position Role:</TextBlock>
-            <ComboBox x:Name="positionRole" Height="17" Width="106"></ComboBox>
+            <ComboBox x:Name="positionRole" SelectionChanged="PositionChangedEvent" Height="17" Width="106"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Position:</TextBlock>
-            <ComboBox x:Name="position" Height="17" Width="106"></ComboBox>
+            <ComboBox x:Name="position" IsEnabled="False" Height="17" Width="106"></ComboBox>
         </StackPanel>
 		<StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
 			<TextBlock FontSize="15" Margin="13">Team:</TextBlock>

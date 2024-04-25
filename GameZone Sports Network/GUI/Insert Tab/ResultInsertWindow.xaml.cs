@@ -42,7 +42,7 @@ namespace GUI
             string awayTeam = awayTeamBox.Text;
             int homePoints = int.Parse(homeTeamPointsBox.Text);
             int awayPoints = int.Parse(awayTeamPointsBox.Text);
-            r.CreateResults(week, awayTeam, homePoints, awayPoints);
+            r.CreateResults(week, homeTeam, awayTeam, homePoints, awayPoints);
         }
 
         private void populateTeams(SqlTeamRepository s)

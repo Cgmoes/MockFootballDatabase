@@ -63,7 +63,7 @@ namespace GameZone_Sports_Network
 
         public IReadOnlyList<string> RetrieveTeamNames() 
         {
-            List<string> teamNames = new List<string>();
+            List<string> teams = new List<string>();
             using (var connection = new SqlConnection(connectionString)) 
             {
                 using (var command = new SqlCommand("League.RetrieveTeams", connection)) 
@@ -76,13 +76,49 @@ namespace GameZone_Sports_Network
                     {
                         while (reader.Read())
                         {
-                            string teamName = reader["TeamName"].ToString();
-                            teamNames.Add(teamName);
+                            
+                            string team = reader["TeamName"].ToString();
+                            teams.Add(team);
                         }
                     }
                 }
             }
-            return teamNames;
+            return teams;
+        }
+
+        public Team GetTeam(string teamName) 
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.GetTeamByName", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        return TranslateTeam(reader);
+                    }
+                }
+            }
+        }
+
+        private Team TranslateTeam(SqlDataReader reader) 
+        {
+            var teamIdOrdinal = reader.GetOrdinal("TeamID");
+            var teamNameOrdinal = reader.GetOrdinal("TeamName");
+            var teamCityOrdinal = reader.GetOrdinal("TeamCity");
+            var yearEstablishedOrdinal = reader.GetOrdinal("YearEstablished");
+
+            if (!reader.Read()) return null;
+
+            return new Team(
+                reader.GetInt32(teamIdOrdinal),
+                reader.GetString(teamNameOrdinal),
+                reader.GetString(teamCityOrdinal),
+                reader.GetInt32(yearEstablishedOrdinal)
+                );
         }
     }
 }

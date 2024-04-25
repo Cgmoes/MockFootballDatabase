@@ -20,5 +20,10 @@ namespace Data.Models
             TeamCity = teamCity;
             YearEstablished = yearEstablished;
         }
+
+        public int GetTeamId(string name) 
+        {
+            return TeamID;
+        }
     }
 }

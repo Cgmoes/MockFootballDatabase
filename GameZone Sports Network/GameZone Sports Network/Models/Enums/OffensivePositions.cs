@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    public enum Positions
+    public enum OffensivePositions
     {
-        QB, RB, WR, TE, OL, DL, LB, DB, K, P
+        QB, RB, WR, TE, OL
     }
 }
