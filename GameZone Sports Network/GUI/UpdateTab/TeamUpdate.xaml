@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-              Title="Update Team" Height="250" Width="350">
+              Title="Update Team" Height="300" Width="350">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -16,17 +17,22 @@
         </Grid.RowDefinitions>
         <TextBlock FontSize="30">Update Team:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Teams:</TextBlock>
+            <ComboBox x:Name="comboBoxTeam" Width="160" SelectionChanged="Selection" Height="22"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock  FontSize="15" Margin="12">Team Name:</TextBlock>
             <TextBox  x:Name="nameBox" Width="194" Height="22"/>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Team City:</TextBlock>
             <TextBox x:Name="cityBox" Width="175" Height="22"/>
         </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+        <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Year Established:</TextBlock>
             <TextBox x:Name="yearBox" Width="80" Height="22"/>
         </StackPanel>
-        <Button x:Name="SubmitButtonTeam" Click="SubmitClick" Grid.Row="10" FontSize="17" Margin="31,10,220,10">Submit</Button>
+        <Button x:Name="SubmitButtonTeam" Click="SubmitClick" Grid.Row="5" FontSize="17" Margin="31,10,220,10">Submit</Button>
     </Grid>
 </Window>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Data.Models;
 using GameZone_Sports_Network;
 
 namespace GUI
@@ -23,6 +24,7 @@ namespace GUI
         static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
         SqlStatsRepository s = new SqlStatsRepository(connectionString);
         public int idToBe;
+        public bool Update;
         public OffensiveStatsWindow(int playerId)
         {
             InitializeComponent();
@@ -47,7 +49,39 @@ namespace GUI
             int recYards = int.Parse(recYardsBox.Text);
             int tds = int.Parse(tdBox.Text);
             int fumbles = int.Parse(fumblesBox.Text);
-            s.CreateOffensiveTeamsStats(idToBe, passAtt, passComp, passYards, passTd, ints, rushYards, rushAtt, rec, recYards, tds, fumbles);
+            if (!Update)
+            {
+                s.CreateOffensiveTeamsStats(idToBe, passAtt, passComp, passYards, passTd, ints, rushYards, rushAtt, rec, recYards, tds, fumbles);
+            }
+            else
+            {
+                OffensiveGamePlayerStats stats = s.GetOffensiveStatsByPlayerId(idToBe);
+                s.UpdateOffensiveTeamsStats(stats.OffensiveID, idToBe, passAtt, passComp, passYards, passTd, ints, rushYards, rushAtt, rec, recYards, tds, fumbles);
+            }
+        }
+        public bool FillStats(int id)
+        {
+            OffensiveGamePlayerStats stats = s.GetOffensiveStatsByPlayerId(idToBe);
+            if (stats != null)
+               {
+                passAttBox.Text = stats.PassAttempts.ToString();
+                passCompBox.Text = stats.PassCompletions.ToString();
+                passYardsBox.Text = stats.PassYards.ToString();
+                passTdBox.Text = stats.PassTDs.ToString();
+                intsBox.Text = stats.Ints.ToString();
+                rushYardsBox.Text = stats.RushYrds.ToString();
+                rushAttBox.Text = stats.RushAttempts.ToString();
+                recBox.Text = stats.Receptions.ToString();
+                recYardsBox.Text = stats.RecievingYrds.ToString() ;
+                tdBox.Text = stats.Touchdowns.ToString();
+                fumblesBox.Text = stats.Fumbles.ToString();
+
+                return true;
+                }
+            else
+                {
+                return false;
+                }
         }
     }
 }

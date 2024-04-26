@@ -86,9 +86,9 @@ namespace GameZone_Sports_Network
                         while (reader.Read())
                         {
                             count++;
-                            string teamName = reader["HomeTeam"].ToString()!;
+                            string teamName = reader["Team"].ToString()!;
 
-                            results.Add($"{count}. Team: {teamName}\tRecord: {reader["Wins"]}-{reader["Ties"]}-{reader["Losses"]}");
+                            results.Add($"{count}. Team: {teamName} \tRecord: {reader["Wins"]}-{reader["Ties"]}-{reader["Losses"]}");
                         }
                     }
                 }
@@ -112,7 +112,7 @@ namespace GameZone_Sports_Network
                     {
                         while (reader.Read())
                         {
-                            results.Add($"Ranking: {reader["PlayerRank"]}.{reader["PlayerName"]}");
+                            results.Add($"{reader["PlayerRank"]}.{reader["PlayerName"]} - ({reader["TeamName"]}) \tTouchdowns: {reader["Touchdowns"]}");
                         }
                     }
                 }

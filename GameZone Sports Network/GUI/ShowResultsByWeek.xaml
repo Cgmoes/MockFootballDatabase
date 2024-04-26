@@ -19,6 +19,6 @@
             </Border>
             <Button Name="SubmitButtonResults" Grid.Row="5" FontSize="17" Margin="31,0,240,0" Height="26" VerticalAlignment="Center" Click="SubmitClick">Submit</Button>
         </StackPanel>
-        <ListBox Background="LightGray" Grid.Row="1" x:Name="showResultsBox"></ListBox>
+        <ListBox  FontSize="15" FontWeight="Bold" Background="LightGray" Grid.Row="1" x:Name="showResultsBox"></ListBox>
     </Grid>
 </UserControl>

@@ -19,14 +19,14 @@
                 <RowDefinition Height=".3*"/>
             </Grid.RowDefinitions>
             <TextBlock FontSize="40" FontWeight="Black">Teams:</TextBlock>
-            <ListBox Grid.Row="1" x:Name="playersListBox" ></ListBox>
+            <ListBox Grid.Row="1" x:Name="teamListBox" SelectionChanged="Selected"></ListBox>
             <StackPanel Orientation="Horizontal" Grid.Row="2">
                 <TextBlock Margin="17" FontSize="15" Height="25">Search Team:</TextBlock>
                 <TextBox Name="searchBox" Width="155" Height="17"></TextBox>
                 <Button Content="Submit" Width="75" Height="17" />
             </StackPanel>
         </Grid>
-        <local:DisplayTeamPlayers Grid.Column="1" Grid.ColumnSpan="2" Margin="38,0,0,89"/>
+        <local:DisplayTeamPlayers x:Name="DisplayTeamPlayerControl" Grid.Column="1" Grid.ColumnSpan="2" Margin="38,0,0,89"/>
         <TextBlock Background="LightGray" Grid.Column="1"/>
     </Grid>
 </UserControl>

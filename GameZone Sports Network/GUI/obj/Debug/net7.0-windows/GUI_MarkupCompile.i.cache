@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\GUI stuff\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\
 GUI
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\GUI stuff\GameZone Sports Network\GUI\App.xaml
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\App.xaml
 191646772727
 
 25290536713
-200926331036
+2001004480715
 CountBox.xaml;DisplayTeamPlayers.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;RankQBsQuery.xaml;SearchControl.xaml;ShowResultsByWeek.xaml;StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\PlayerUpdate.xaml;UpdateTab\PlayerUpdateInfo.xaml;UpdateTab\TeamUpdate.xaml;UpdateTab\UpdateControl.xaml;
 
 True

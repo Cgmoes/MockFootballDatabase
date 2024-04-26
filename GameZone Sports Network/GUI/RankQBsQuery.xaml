@@ -12,6 +12,6 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock FontSize="18" FontWeight="Black">Ranking QBs - Passing TDs</TextBlock>
-        <ListBox Background="LightGray" Grid.Row="1" x:Name="rankingListBox"></ListBox>
+        <ListBox FontSize="15" FontWeight="Bold" Background="LightGray" Grid.Row="1" x:Name="rankingListBox"></ListBox>
     </Grid>
 </UserControl>

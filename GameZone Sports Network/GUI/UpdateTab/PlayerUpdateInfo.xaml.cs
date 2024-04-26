@@ -107,18 +107,21 @@ namespace GUI
                 OffensiveStatsWindow o = new OffensiveStatsWindow(p.PlayerID);
                 o.Show();
                 OffensiveStatsWindow = o;
+                OffensiveStatsWindow.Update = OffensiveStatsWindow.FillStats(p.PlayerID);
             }
             if (posID.SelectedItem.ToString()!.Equals("Defense"))
             {
                 DefensiveStatsWindow d = new DefensiveStatsWindow(p.PlayerID);
                 d.Show();
                 DefensiveStatsWindow = d;
+                DefensiveStatsWindow.Update = DefensiveStatsWindow.FillStats(p.PlayerID);
             }
             if (posID.SelectedItem.ToString()!.Equals("Special Teams"))
             {
                 SpecialTeamsStatsWindow s = new SpecialTeamsStatsWindow(p.PlayerID);
                 s.Show();
                 SpecialTeamsStatsWindow = s;
+                SpecialTeamsStatsWindow.Update = SpecialTeamsStatsWindow.FillStats(p.PlayerID);
             }
             CheckSubmit();
         }

@@ -51,7 +51,7 @@ namespace GameZone_Sports_Network
                         }
                         else
                         {
-                            DefensiveGamePlayerStats s = GetDefensiveStatsByPlayerId(playerID, connection);
+                            DefensiveGamePlayerStats s = GetDefensiveStatsByPlayerId(playerID);
                             teamId = s.DefensiveTeamID;
                         }
 
@@ -91,7 +91,7 @@ namespace GameZone_Sports_Network
                         }
                         else 
                         {
-                            SpecialTeamsGamePlayerStats s = GetSpecialStatsByPlayerId(playerID, connection);
+                            SpecialTeamsGamePlayerStats s = GetSpecialStatsByPlayerId(playerID);
                             teamId = s.SpecialTeamsId;
                         }
 
@@ -138,7 +138,7 @@ namespace GameZone_Sports_Network
                         }
                         else
                         {
-                            OffensiveGamePlayerStats s = GetOffensiveStatsByPlayerId(playerID, connection);
+                            OffensiveGamePlayerStats s = GetOffensiveStatsByPlayerId(playerID);
                             teamId = s.OffensiveID;
                         }
 
@@ -148,14 +148,17 @@ namespace GameZone_Sports_Network
             }
         }
 
-        public SpecialTeamsGamePlayerStats GetSpecialStatsByPlayerId(int playerId, SqlConnection c)
+        public SpecialTeamsGamePlayerStats GetSpecialStatsByPlayerId(int playerId)
         {
-                using (var command = new SqlCommand("League.GetSpecialTeamsID", c))
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.GetSpecialTeamsID", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
                     command.Parameters.AddWithValue("PlayerID", playerId);
 
+                    connection.Open();
 
                     using (var reader = command.ExecuteReader())
                     {
@@ -164,6 +167,7 @@ namespace GameZone_Sports_Network
                         return stats!;
                     }
                 }
+            }
         }
 
         private SpecialTeamsGamePlayerStats? TranslateSpecialStats(SqlDataReader reader)
@@ -209,42 +213,139 @@ namespace GameZone_Sports_Network
                 reader.GetInt32(tdOrdinal)
                 );
         }
-        public DefensiveGamePlayerStats GetDefensiveStatsByPlayerId(int playerId, SqlConnection c)
+        public DefensiveGamePlayerStats GetDefensiveStatsByPlayerId(int playerId)
         {
-            using (var command = new SqlCommand("League.GetDefensiveStatID", c))
+            using (var connection = new SqlConnection(connectionString))
             {
-                command.CommandType = CommandType.StoredProcedure;
-
-                command.Parameters.AddWithValue("PlayerID", playerId);
-
-
-                using (var reader = command.ExecuteReader())
+                using (var command = new SqlCommand("League.GetDefensiveStatID", connection))
                 {
-                    var stats = TranslateDefensiveStats(reader);
+                    command.CommandType = CommandType.StoredProcedure;
 
-                    return stats!;
+                    command.Parameters.AddWithValue("PlayerID", playerId);
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        var stats = TranslateDefensiveStats(reader);
+
+                        return stats!;
+                    }
                 }
             }
         }
 
 
-        public OffensiveGamePlayerStats GetOffensiveStatsByPlayerId(int playerId, SqlConnection c)
+        public OffensiveGamePlayerStats GetOffensiveStatsByPlayerId(int playerId)
         {
-            using (var command = new SqlCommand("League.GetOffensiveStatID", c))
+            using (var connection = new SqlConnection(connectionString))
             {
-                command.CommandType = CommandType.StoredProcedure;
-
-                command.Parameters.AddWithValue("PlayerID", playerId);
-
-
-                using (var reader = command.ExecuteReader())
+                using (var command = new SqlCommand("League.GetOffensiveStatID", connection))
                 {
-                    var stats = TranslateOffensiveStats(reader);
+                    command.CommandType = CommandType.StoredProcedure;
 
-                    return stats!;
+                    command.Parameters.AddWithValue("PlayerID", playerId);
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        var stats = TranslateOffensiveStats(reader);
+
+                        return stats!;
+                    }
+                }
+
+            }
+        }
+        public SpecialTeamsGamePlayerStats UpdateSpecialStats(int specialId, int playerId, int fgAtt, int fgMade, int punts, int puntYrds)
+        {
+            using (var transaction = new TransactionScope())
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    using (var command = new SqlCommand("League.UpdateSpecialTeamsStats", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        
+                        command.Parameters.AddWithValue("PlayerID", playerId);
+                        command.Parameters.AddWithValue("FieldGoalAttempts", fgAtt);
+                        command.Parameters.AddWithValue("FieldGoalsMade", fgMade);
+                        command.Parameters.AddWithValue("Punts", punts);
+                        command.Parameters.AddWithValue("PuntYards", puntYrds);
+                        connection.Open();
+
+                        command.ExecuteNonQuery();
+
+                        transaction.Complete();
+
+                        return new SpecialTeamsGamePlayerStats(specialId, playerId, fgAtt, fgMade, punts, puntYrds);
+                    }
                 }
             }
         }
+
+        public OffensiveGamePlayerStats UpdateOffensiveTeamsStats(int offensiveID, int playerID, int passAtt, int passComp, int passYards, int passTd, int ints, int rushYrds, int rushAtt, int rec, int recYrds, int tds, int fumbles)
+        {
+            using (var transaction = new TransactionScope())
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    using (var command = new SqlCommand("League.UpdateOffensiveStats", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("PlayerID", playerID);
+                        command.Parameters.AddWithValue("PassAttempts", passAtt);
+                        command.Parameters.AddWithValue("PassCompletions", passComp);
+                        command.Parameters.AddWithValue("PassYards", passYards);
+                        command.Parameters.AddWithValue("PassTD", passTd);
+                        command.Parameters.AddWithValue("Ints", ints);
+                        command.Parameters.AddWithValue("RushYrds", rushYrds);
+                        command.Parameters.AddWithValue("RushAttempts", rushAtt);
+                        command.Parameters.AddWithValue("Receptions", rec);
+                        command.Parameters.AddWithValue("RecievingYrds", recYrds);
+                        command.Parameters.AddWithValue("Touchdowns", tds);
+                        command.Parameters.AddWithValue("Fumbles", fumbles);
+
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        transaction.Complete();
+
+                        return new OffensiveGamePlayerStats(offensiveID, playerID, passAtt, passComp, passYards, passTd, ints, rushYrds, rushAtt, rec, recYrds, tds, fumbles);
+                    }
+                }
+            }
+        }
+
+        public DefensiveGamePlayerStats UpdateDefensiveStats(int defensiveID, int playerId, int tackles, int sacks, int ints, int fumbles, int tds)
+        {
+            using (var transaction = new TransactionScope())
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    using (var command = new SqlCommand("League.UpdateDefensiveStats", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("PlayerID", playerId);
+                        command.Parameters.AddWithValue("Tackles", tackles);
+                        command.Parameters.AddWithValue("Sacks", sacks);
+                        command.Parameters.AddWithValue("Interceptions", ints);
+                        command.Parameters.AddWithValue("Fumbles", fumbles);
+                        command.Parameters.AddWithValue("TDs", tds);
+                        connection.Open();
+
+                        command.ExecuteNonQuery();
+
+                        transaction.Complete();
+
+                        return new DefensiveGamePlayerStats(defensiveID, playerId, tackles, sacks, ints, fumbles, tds);
+                    }
+                }
+            }
+        }
+
         private OffensiveGamePlayerStats? TranslateOffensiveStats(SqlDataReader reader)
         {
             var IdOrdinal = reader.GetOrdinal("OffensiveID");

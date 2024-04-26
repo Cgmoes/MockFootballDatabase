@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using System.Xml.Linq;
 using Data;
 using Data.Models;
 
@@ -180,6 +181,41 @@ namespace GameZone_Sports_Network
                 }
             }
         }
+
+        public IReadOnlyList<Player> GetPlayersByTeam(int teamId)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.GetPlayerByTeam", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("teamId", teamId);
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader()) return TranslatePlayers(reader);
+                }
+            }
+        }
+
+        public int GetTotalPlayers(int teamId)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.GetTotalPlayers", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("teamId", teamId);
+
+                    connection.Open();
+
+                    return (int)command.ExecuteScalar();
+                }
+            }
+        }
+
         private IReadOnlyList<Player> TranslatePlayers(SqlDataReader reader) 
         {
             var players = new List<Player>();

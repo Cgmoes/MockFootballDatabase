@@ -142,7 +142,7 @@ namespace GameZone_Sports_Network
             var teamCityOrdinal = reader.GetOrdinal("TeamCity");
             var yearEstablishedOrdinal = reader.GetOrdinal("YearEstablished");
 
-            if (!reader.Read()) return null!;
+            if (!reader.Read()) return null;
 
             return new Team(
                 reader.GetInt32(teamIdOrdinal),
@@ -165,13 +165,14 @@ namespace GameZone_Sports_Network
                         command.Parameters.AddWithValue("TeamName", teamName);
                         command.Parameters.AddWithValue("TeamCity", teamCity);
                         command.Parameters.AddWithValue("YearEstablished", yearEstablished);
+                        command.Parameters.AddWithValue("TeamID", teamId);
 
                         connection.Open();
 
                         command.ExecuteNonQuery();
 
                         transaction.Complete();
-
+                        
                         return new Team(teamId, teamName, teamCity, yearEstablished);
                     }
                 }

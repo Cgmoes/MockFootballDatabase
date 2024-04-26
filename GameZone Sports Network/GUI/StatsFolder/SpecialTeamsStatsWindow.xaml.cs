@@ -38,6 +38,7 @@ namespace GUI
         static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
         SqlStatsRepository s = new SqlStatsRepository(connectionString);
         public int idToBe;
+        public bool Update;
         public SpecialTeamsStatsWindow(int playerID)
         {
             InitializeComponent();
@@ -55,8 +56,32 @@ namespace GUI
             int fgMade = int.Parse(fgMadeBox.Text);
             int punts = int.Parse(puntsBox.Text);
             int puntYards = int.Parse(puntYardsBox.Text);
+            if (!Update)
+            {
+                s.CreateSpecialTeamsStats(idToBe, fgAttempts, fgMade, punts, puntYards);
+            }
+            else
+            {
+                SpecialTeamsGamePlayerStats stats = s.GetSpecialStatsByPlayerId(idToBe);
+                s.UpdateSpecialStats(stats.SpecialTeamsId,idToBe, fgAttempts, fgMade, punts, puntYards);
+            }
+        }
 
-            s.CreateSpecialTeamsStats(idToBe, fgAttempts, fgMade, punts, puntYards);
+        public bool FillStats(int id)
+        {
+            SpecialTeamsGamePlayerStats stats = s.GetSpecialStatsByPlayerId(idToBe);
+            if (stats != null)
+            {
+                fgAttemptsBox.Text = stats.FieldGoalAtt.ToString();
+                fgMadeBox.Text = stats.FieldGoalsMade.ToString();
+                puntsBox.Text = stats.Punts.ToString();
+                puntYardsBox.Text = stats.PuntYrds.ToString();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

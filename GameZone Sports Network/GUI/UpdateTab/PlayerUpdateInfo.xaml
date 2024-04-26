@@ -23,39 +23,39 @@
         <TextBlock FontSize="30">Update Player:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Name:</TextBlock>
-            <TextBox Name="playerName" Width="194" Height="17"/>
+            <TextBox Name="playerName" Width="194" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Position Role:</TextBlock>
-            <ComboBox Name="posID" SelectionChanged="ChangedPosition"  Height="17" Width="106"></ComboBox>
+            <ComboBox Name="posID" SelectionChanged="ChangedPosition"  Height="20" Width="106"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Position:</TextBlock>
-            <ComboBox Name="position" Height="17" Width="106"></ComboBox>
+            <ComboBox Name="position" Height="20" Width="106"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Team:</TextBlock>
-            <ComboBox Name="team" Height="17" Width="106"></ComboBox>
+            <ComboBox Name="team" Height="20" Width="106"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Age:</TextBlock>
-            <TextBox Name="age" Width="57" Height="17"/>
+            <TextBox Name="age" Width="57" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Jersey Number:</TextBlock>
-            <TextBox Name="jerseyNumber" Width="57" Height="17"/>
+            <TextBox Name="jerseyNumber" Width="57" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="7" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">College Name:</TextBlock>
-            <TextBox Name="college" Width="211" Height="17"/>
+            <TextBox Name="college" Width="211" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="8" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Home State:</TextBlock>
-            <TextBox Name="state" Width="45" Height="17"/>
+            <TextBox Name="state" Width="45"  Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="9" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Height:</TextBlock>
-            <TextBox Name="height" Width="45" Height="17"/>
+            <TextBox Name="height" Width="45" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="10" Orientation="Horizontal">
             <Button Name="UpdateButtonPlayer" Grid.Row="10" FontSize="17" Width="115" Height="29" Margin="10" Click="UpdateClick">Update</Button>

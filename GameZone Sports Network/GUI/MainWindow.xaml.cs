@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Data.Models;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -35,6 +37,10 @@ namespace GUI
                 StandingsTable.Visibility = Visibility.Visible;
                 ResultByWeek.Visibility = Visibility.Visible;
                 RankQb.Visibility = Visibility.Visible;
+                RankQb.rankingListBox.Items.Clear();
+                RankQb.populateRankings();
+                StandingsTable.standingsBox.Items.Clear();
+                StandingsTable.populateStandings();
             }
             if (e.Name == "UpdateButton")
             {
@@ -46,6 +52,10 @@ namespace GUI
             {
                 HideVisibilites();
                 SearchControl.Visibility = Visibility.Visible;
+                SearchControl.DisplayTeamPlayerControl.playerListBox.Items.Clear();
+                SearchControl.Selected(this, e);
+                SearchControl.teamListBox.Items.Clear();
+                SearchControl.PopulateTeamsBox();
             }
         }
         private void HideVisibilites()

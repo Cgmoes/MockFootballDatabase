@@ -18,12 +18,15 @@ BEGIN
             p.Position = 'QB'
     )
     SELECT
-        PlayerRank,
-        PlayerName,
-        Position,
-        TeamName
+        r.PlayerRank,
+        r.PlayerName,
+        r.Position,
+        r.TeamName,
+		o.Touchdowns,
+		r.TeamName
     FROM
-        RankedPlayers
+        RankedPlayers r
+	INNER JOIN League.OffensivePlayerStats o ON o.PlayerID = r.PlayerID 
     ORDER BY
-        PlayerRank;
+        r.PlayerRank;
 END;

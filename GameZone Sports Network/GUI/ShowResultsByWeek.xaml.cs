@@ -34,6 +34,7 @@ namespace GUI
             List<string> teamResults = t.GetResultsByWeek(weekNumber);
 
             showResultsBox.Items.Clear();
+
             foreach (string teamInfo in teamResults)
             {
                 showResultsBox.Items.Add(teamInfo);

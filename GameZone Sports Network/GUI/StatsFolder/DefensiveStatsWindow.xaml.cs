@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Data.Models;
 using GameZone_Sports_Network;
 
 namespace GUI
@@ -23,6 +24,7 @@ namespace GUI
         static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
         SqlStatsRepository s = new SqlStatsRepository(connectionString);
         public int idToBe;
+        public bool Update;
         public DefensiveStatsWindow(int id)
         {
             InitializeComponent();
@@ -41,8 +43,33 @@ namespace GUI
             int ints = int.Parse(intsBox.Text);
             int fumbles = int.Parse(fumblesBox.Text);
             int tds = int.Parse(tdBox.Text);
+            if (!Update)
+            {
+                s.CreateDefensiveTeamsStats(idToBe, tackles, sacks, ints, fumbles, tds);
+            }
+            else
+            {
+                DefensiveGamePlayerStats stats = s.GetDefensiveStatsByPlayerId(idToBe);
+                s.UpdateDefensiveStats(stats.DefensiveTeamID, idToBe, tackles, sacks, ints, fumbles, tds);
+            }
+        }
 
-            s.CreateDefensiveTeamsStats(idToBe, tackles, sacks, ints, fumbles, tds);
+        public bool FillStats(int id) 
+        {
+            DefensiveGamePlayerStats stats =  s.GetDefensiveStatsByPlayerId(idToBe);
+            if(stats != null)
+            {
+            tacklesBox.Text = stats.Tackles.ToString();
+            sacksBox.Text = stats.Sacks.ToString();
+            intsBox.Text = stats.Interceptions.ToString();
+            fumblesBox.Text = stats.Fumbles.ToString();
+            tdBox.Text = stats.TDs.ToString();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }

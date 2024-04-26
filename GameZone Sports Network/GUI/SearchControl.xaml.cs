@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Data.Models;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -20,9 +22,35 @@ namespace GUI
     /// </summary>
     public partial class SearchControl : UserControl
     {
+        public static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        SqlTeamRepository t = new SqlTeamRepository(connectionString);
+        SqlPlayerRepository p = new SqlPlayerRepository(connectionString);
         public SearchControl()
         {
             InitializeComponent();
+        }
+        public void Selected(object sender, RoutedEventArgs e)
+        {
+            DisplayTeamPlayerControl.playerListBox.Items.Clear();
+            if (teamListBox.SelectedItem != null)
+            {
+                string item = teamListBox.SelectedItem.ToString()!;
+                Team team = t.GetTeam(item);
+                IReadOnlyList<Player> playersInTeam = p.GetPlayersByTeam(team.TeamID);
+                int totalPlayers = p.GetTotalPlayers(team.TeamID);
+                DisplayTeamPlayerControl.playerListBox.Items.Add($"Total Number Of Players: {totalPlayers}");
+                foreach(Player player in playersInTeam) 
+                {
+                    DisplayTeamPlayerControl.playerListBox.Items.Add($"{player.PlayerName} - {player.Position}");
+                }
+            }
+        }
+        public void PopulateTeamsBox()
+        {
+            foreach (string team in t.RetrieveTeamNames())
+            {
+                teamListBox.Items.Add(team);
+            }
         }
     }
 }

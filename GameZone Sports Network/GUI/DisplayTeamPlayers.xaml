@@ -11,7 +11,7 @@
             <RowDefinition Height=".2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock FontSize="40" FontWeight="Black">Result Players:</TextBlock>
-        <ListBox Grid.Row="1" FontSize="18"></ListBox>
+        <TextBlock FontSize="40" Margin="10,0,0,0" FontWeight="Black">Result Players:</TextBlock>
+        <ListBox x:Name="playerListBox" Grid.Row="1" FontSize="18"></ListBox>
     </Grid>
 </UserControl>
