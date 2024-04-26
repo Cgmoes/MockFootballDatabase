@@ -29,6 +29,7 @@ namespace GUI
             populateStandings();
         }
 
+        
         public void populateStandings() 
         {
             List<string> standings = t.ShowStandings();

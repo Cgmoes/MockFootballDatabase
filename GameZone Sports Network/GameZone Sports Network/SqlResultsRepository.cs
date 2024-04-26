@@ -86,9 +86,33 @@ namespace GameZone_Sports_Network
                         while (reader.Read())
                         {
                             count++;
-                            string teamName = reader["Team"].ToString()!;
+                            string teamName = reader["HomeTeam"].ToString()!;
 
-                            results.Add($"{count}. Team: {teamName}");
+                            results.Add($"{count}. Team: {teamName}\tRecord: {reader["Wins"]}-{reader["Ties"]}-{reader["Losses"]}");
+                        }
+                    }
+                }
+            }
+            return results;
+        }
+
+        public List<string> RankQBs() 
+        {
+            List<string> results = new List<string>();
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.GetQBRankings", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            results.Add($"Ranking: {reader["PlayerRank"]}.{reader["PlayerName"]}");
                         }
                     }
                 }
