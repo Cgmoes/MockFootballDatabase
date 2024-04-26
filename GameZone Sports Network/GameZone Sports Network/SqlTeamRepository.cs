@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 using System.Xml.Linq;
+using Data;
 using Data.Models;
 
 namespace GameZone_Sports_Network
@@ -149,6 +150,32 @@ namespace GameZone_Sports_Network
                 reader.GetString(teamCityOrdinal),
                 reader.GetInt32(yearEstablishedOrdinal)
                 );
+        }
+
+        public Team Updateteam(int teamId, string teamName, string teamCity, int yearEstablished)
+        {
+            using (var transaction = new TransactionScope())
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    using (var command = new SqlCommand("League.SaveTeam", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("TeamName", teamName);
+                        command.Parameters.AddWithValue("TeamCity", teamCity);
+                        command.Parameters.AddWithValue("YearEstablished", yearEstablished);
+
+                        connection.Open();
+
+                        command.ExecuteNonQuery();
+
+                        transaction.Complete();
+
+                        return new Team(teamId, teamName, teamCity, yearEstablished);
+                    }
+                }
+            }
         }
     }
 }

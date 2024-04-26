@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Data.Models;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -19,6 +21,8 @@ namespace GUI
     /// </summary>
     public partial class TeamUpdate : Window
     {
+        public static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        public SqlTeamRepository t = new SqlTeamRepository(connectionString);
         public TeamUpdate()
         {
             InitializeComponent();
@@ -30,6 +34,15 @@ namespace GUI
             {
                 SubmitClose?.Invoke(sender, new CustomEventArgs(b.Name));
             }
+
+            string teamName = nameBox.Text;
+            string teamCity = cityBox.Text;
+            int year = int.Parse(yearBox.Text);
+
+            Team teams = t.GetTeam(teamName);
+            int teamId = teams.TeamID;
+
+            t.Updateteam(teamId, teamName, teamCity, year);
         }
     }
 }
