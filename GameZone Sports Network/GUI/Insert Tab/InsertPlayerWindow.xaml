@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Create a Player" Height="550" Width="350">
+        Title="Create a Player" Height="600" Width="350">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -23,39 +23,39 @@
         <TextBlock FontSize="30">Create a Player:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Name:</TextBlock>
-            <TextBox x:Name="playerName" Width="194" Height="17"/>
+            <TextBox x:Name="playerName" Width="194" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Position Role:</TextBlock>
-            <ComboBox x:Name="positionRole" SelectionChanged="PositionChangedEvent" Height="17" Width="106"></ComboBox>
+            <ComboBox x:Name="positionRole" SelectionChanged="PositionChangedEvent" Height="20" Width="106"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Position:</TextBlock>
-            <ComboBox x:Name="position" IsEnabled="False" Height="17" Width="106"></ComboBox>
+            <ComboBox x:Name="position" IsEnabled="False" Height="20" Width="106"></ComboBox>
         </StackPanel>
 		<StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
 			<TextBlock FontSize="15" Margin="13">Team:</TextBlock>
-            <ComboBox x:Name="team" Height="17" Width="106"></ComboBox>
+            <ComboBox x:Name="team" Height="20" Width="106"></ComboBox>
 		</StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Age:</TextBlock>
-            <TextBox x:Name="age" Width="57" Height="17"/>
+            <TextBox x:Name="age" Width="57" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Jersey Number:</TextBlock>
-            <TextBox x:Name="jersey" Width="57" Height="17"/>
+            <TextBox x:Name="jersey" Width="57" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="7" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">College Name:</TextBlock>
-            <TextBox x:Name="college" Width="211" Height="17"/>
+            <TextBox x:Name="college" Width="211" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="8" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Home State:</TextBlock>
-            <TextBox x:Name="state" Width="45" Height="17"/>
+            <TextBox x:Name="state" Width="45" Height="20"/>
         </StackPanel>
         <StackPanel Grid.Row="9" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Height:</TextBlock>
-            <TextBox x:Name="height" Width="45" Height="17"/>
+            <TextBox x:Name="height" Width="45" Height="20"/>
         </StackPanel>
         <Button Name="SubmitButtonPlayer" Grid.Row="10" FontSize="17" Margin="31,10,220,10" Click="SubmitClick">Submit</Button>
     </Grid>

@@ -12,6 +12,6 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock FontSize="40" FontWeight="Black">Result Players:</TextBlock>
-        <ListBox Grid.Row="1"></ListBox>
+        <ListBox Grid.Row="1" FontSize="18"></ListBox>
     </Grid>
 </UserControl>

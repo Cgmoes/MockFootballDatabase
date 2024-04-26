@@ -8,12 +8,12 @@
                           d:DesignHeight="250" d:DesignWidth="300">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
-            <RowDefinition Height=".15*"/>
+            <RowDefinition Height=".18*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
-            <TextBlock FontSize="15" FontWeight="Black" Margin="7">Show Results:</TextBlock>
-            <TextBlock FontSize="15" FontWeight="Black" Margin="7">Week:</TextBlock>
+            <TextBlock FontSize="18" FontWeight="Black" Margin="7">Show Results:</TextBlock>
+            <TextBlock FontSize="18" FontWeight="Black" Margin="7">Week:</TextBlock>
             <Border Background="MediumPurple" BorderBrush="Black" BorderThickness="2" Height="22">
                 <local:CountBox x:Name="countBox"/>
             </Border>
