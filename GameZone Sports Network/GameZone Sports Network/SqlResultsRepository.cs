@@ -29,8 +29,8 @@ namespace GameZone_Sports_Network
                         command.CommandType = CommandType.StoredProcedure;
 
                         command.Parameters.AddWithValue("WeekNumber", week);
+                        command.Parameters.AddWithValue("HomeTeam", homeTeam);
                         command.Parameters.AddWithValue("TeamPlayed", teamPlayed);
-                        command.Parameters.AddWithValue("TeamPlayed", homeTeam);
                         command.Parameters.AddWithValue("PointsScored", pointsScored);
                         command.Parameters.AddWithValue("PointsAgainst", pointsAgainst);
 

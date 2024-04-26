@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="GUI.ShowResultsByWeek"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI"
+             mc:Ignorable="d" 
+                          d:DesignHeight="250" d:DesignWidth="300">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".15*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock FontSize="15" FontWeight="Black" Margin="7">Show Results:</TextBlock>
+            <TextBlock FontSize="15" FontWeight="Black" Margin="7">Week:</TextBlock>
+            <Border Background="MediumPurple" BorderBrush="Black" BorderThickness="2" Height="22">
+                <local:CountBox x:Name="countBox"/>
+            </Border>
+        </StackPanel>
+        <ListBox Background="LightGray" Grid.Row="1"></ListBox>
+    </Grid>
+</UserControl>

@@ -41,5 +41,14 @@
         <local:StandingsTable x:Name="StandingsTable" Grid.Column="1"  Grid.Row="2"/>
         <local:InsertControl Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="InsertControl" Visibility="Hidden"/>
         <local:UpdateControl Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="UpdateControl" Visibility="Hidden"/>
+        <local:SearchControl  Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="SearchControl" Visibility="Hidden"/>
+        <Grid Grid.Column="0" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <local:RankQBsQuery x:Name="RankQb" Grid.Row="1"/>
+            <local:ShowResultsByWeek x:Name="ResultByWeek" Grid.Row="0"/>
+        </Grid>
     </Grid>
 </Window>

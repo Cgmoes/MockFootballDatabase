@@ -2,10 +2,30 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="DisplayTeamPlayers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RankQBsQuery.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShowResultsByWeek.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateTab\TeamUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="App.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CountBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DisplayTeamPlayers.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Insert Tab\InsertControl.xaml">
@@ -23,10 +43,22 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PlayerUpdate.xaml">
+    <Page Update="RankQBsQuery.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PlayerUpdateInfo.xaml">
+    <Page Update="SearchControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShowResultsByWeek.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateTab\TeamUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateTab\PlayerUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateTab\PlayerUpdateInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StandingsTable.xaml">

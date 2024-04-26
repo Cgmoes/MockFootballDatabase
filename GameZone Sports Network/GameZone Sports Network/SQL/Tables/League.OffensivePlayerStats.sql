@@ -3,7 +3,7 @@ BEGIN
 	CREATE TABLE League.OffensivePlayerStats
 	(
 		OffensiveID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-		PlayerID INT NOT NULL FOREIGN KEY
+		PlayerID INT NULL FOREIGN KEY
 			REFERENCES League.Player(PlayerID),
 		PassAttempts INT NULL,
 		PassCompletions INT NULL,

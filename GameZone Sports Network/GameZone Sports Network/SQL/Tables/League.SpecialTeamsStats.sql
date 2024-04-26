@@ -3,7 +3,7 @@ BEGIN
 CREATE TABLE League.SpecialTeamsStats
 (
 	SpecialTeamsID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-	PlayerID INT NOT NULL FOREIGN KEY
+	PlayerID INT NULL FOREIGN KEY
 		REFERENCES League.Player(PlayerID),
 	FieldGoalAttempts INT NULL,
 	FieldGoalsMade INT NULL,

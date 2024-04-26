@@ -5,10 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Defensive" Height="375" Width="350">
+        Title="Defensive" Height="350" Width="350">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
-            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -21,29 +20,25 @@
         <TextBlock FontSize="30">Edit Defensive Stats:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Tackles:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="tacklesBox"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Sacks:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="sacksBox"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Interceptions:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="intsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Fumbles:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="fumblesBox"/>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
-            <TextBlock FontSize="15" Margin="11">Ints:</TextBlock>
-            <TextBox Width="66" Height="19"/>
-        </StackPanel>
-        <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">TDs:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="tdBox"/>
         </StackPanel>
 
-        <Button Name="SubmitButtonDefensiveStats" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
+        <Button Name="SubmitButtonDefensiveStats" Click="SumbitClick"  Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
     </Grid>
-</Window>
+</Window> 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -20,18 +21,38 @@ namespace GUI
     /// </summary>
     public partial class UpdateControl : UserControl
     {
+        public static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        public SqlPlayerRepository s = new SqlPlayerRepository(connectionString);
+        public SqlTeamRepository t = new SqlTeamRepository(connectionString);
         public UpdateControl()
         {
             InitializeComponent();
             PlayerUpdateControl.GoBack += CloseWindow!;
+            TeamUpdate!.SubmitClose += CloseWindow!;
         }
         public void ClickPlayerUpdate(object sender, RoutedEventArgs e)
         {
             PlayerUpdateControl.Visibility = Visibility.Visible;
+            PlayerUpdateControl.playersListBox.Items.Clear();
+            PlayerUpdateControl.PopulatePlayers(s);
+            PlayerUpdateControl.PopulateTeams(t);
         }
         public void CloseWindow(object sender, RoutedEventArgs e)
         {
             PlayerUpdateControl.Visibility = Visibility.Hidden;
+            TeamUpdate!.Close();
+        }
+        public TeamUpdate? TeamUpdate = new();
+        public void ClickTeamUpdate(object sender, RoutedEventArgs e)
+        {
+            TeamUpdate t = new TeamUpdate();
+            t.Show();
+            TeamUpdate = t;
+            CheckClose();
+        }
+        private void CheckClose()
+        {
+            TeamUpdate!.SubmitClose += CloseWindow!;
         }
     }
 }

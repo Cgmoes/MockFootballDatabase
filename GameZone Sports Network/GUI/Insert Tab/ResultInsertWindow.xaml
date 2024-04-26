@@ -18,7 +18,7 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock FontSize="20" FontWeight="Black" Margin="7">Week:</TextBlock>
             <Border Background="MediumPurple" BorderBrush="Black" BorderThickness="2" Height="22">
-                <local:CountBox/>
+                <local:CountBox x:Name="countBox"/>
             </Border>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">

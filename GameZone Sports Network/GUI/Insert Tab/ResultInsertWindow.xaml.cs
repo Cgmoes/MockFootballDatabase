@@ -37,7 +37,7 @@ namespace GUI
                 SubmitClose?.Invoke(sender, new CustomEventArgs(b.Name));
             }
 
-            int week = 2;
+            int week = countBox.Count;
             string homeTeam = homeTeamBox.Text;
             string awayTeam = awayTeamBox.Text;
             int homePoints = int.Parse(homeTeamPointsBox.Text);

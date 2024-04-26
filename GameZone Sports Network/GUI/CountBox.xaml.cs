@@ -24,11 +24,11 @@ namespace GUI
         {
             InitializeComponent();
         }
-        public uint Count
+        public int Count
         {
             get
             {
-                return (uint)GetValue(CountProperty);
+                return (int)GetValue(CountProperty);
             }
             set
             {
@@ -36,12 +36,12 @@ namespace GUI
             }
         }
 
-        public static readonly DependencyProperty CountProperty = DependencyProperty.Register(nameof(Count), typeof(uint), typeof(CountBox), new PropertyMetadata(1u));
+        public static readonly DependencyProperty CountProperty = DependencyProperty.Register(nameof(Count), typeof(int), typeof(CountBox), new PropertyMetadata(1));
 
 
         private void HandleIncrement(object sender, RoutedEventArgs e)
         {
-            if (Count < uint.MaxValue)
+            if (Count < int.MaxValue)
             {
                 Count++;
             }

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -19,9 +20,13 @@ namespace GUI
     /// </summary>
     public partial class DefensiveStatsWindow : Window
     {
-        public DefensiveStatsWindow()
+        static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        SqlStatsRepository s = new SqlStatsRepository(connectionString);
+        public int idToBe;
+        public DefensiveStatsWindow(int id)
         {
             InitializeComponent();
+            idToBe = id;
         }
         public event EventHandler<CustomEventArgs>? SubmitClose;
 
@@ -31,6 +36,13 @@ namespace GUI
             {
                 SubmitClose?.Invoke(this, new CustomEventArgs(b.Name));
             }
+            int tackles = int.Parse(tacklesBox.Text);
+            int sacks = int.Parse(sacksBox.Text);
+            int ints = int.Parse(intsBox.Text);
+            int fumbles = int.Parse(fumblesBox.Text);
+            int tds = int.Parse(tdBox.Text);
+
+            s.CreateDefensiveTeamsStats(idToBe, tackles, sacks, ints, fumbles, tds);
         }
 
     }

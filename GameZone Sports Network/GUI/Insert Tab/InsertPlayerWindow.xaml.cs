@@ -33,34 +33,37 @@ namespace GUI
         }
         private void PopulatePositions()
         {
-            positionrole.Items.Add("Offense");
-            positionrole.Items.Add("Defense");
-            positionrole.Items.Add("Special Teams");
+            positionRole.Items.Add("Offense");
+            positionRole.Items.Add("Defense");
+            positionRole.Items.Add("Special Teams");
         }
         public void PositionChangedEvent(object sender, SelectionChangedEventArgs e)
         {
-            if(positionRole.Text == "Offense")
+            position.IsEnabled = false;
+            position.Items.Clear();
+
+            if(positionRole.SelectedItem.Equals("Offense"))
             {
-                foreach (string p in Enum.GetValues(typeof(OffensivePositions)))
+                foreach (OffensivePositions p in Enum.GetValues(typeof(OffensivePositions)))
                 {
-                    position.Items.Add(p);
+                    position.Items.Add(p.ToString());
                 }
             }
-            if (positionRole.Text == "Defense")
+            if (positionRole.SelectedItem.Equals("Defense"))
             {
-                foreach (string p in Enum.GetValues(typeof(DefensivePositions)))
+                foreach (DefensivePositions p in Enum.GetValues(typeof(DefensivePositions)))
                 {
-                    position.Items.Add(p);
+                    position.Items.Add(p.ToString());
                 }
             }
-            if (positionRole.Text == "Special Teams")
+            if (positionRole.SelectedItem.Equals("Special Teams"))
             {
-                foreach (string p in Enum.GetValues(typeof(SpecialPositions)))
+                foreach (SpecialPositions p in Enum.GetValues(typeof(SpecialPositions)))
                 {
-                    position.Items.Add(p);
+                    position.Items.Add(p.ToString());
                 }
             }
-            position.Enabled = true;
+            position.IsEnabled = true;
         }
         private void PopulateTeams(SqlTeamRepository s) 
         {
@@ -79,19 +82,20 @@ namespace GUI
             
             string name = playerName.Text;
             int posID = 0;
-            if (positionRole.Name == "Offense")
+            if (positionRole.SelectedItem.Equals("Offense"))
             {
                 posID = 1;
             }
-            else if (positionRole.Name == "Defense")
+            else if (positionRole.SelectedItem.Equals("Defense"))
             {
                 posID = 2;
             }
-            else if (positionRole.Name == "Special Teams")
+            else if (positionRole.SelectedItem.Equals( "Special Teams"))
             {
                 posID = 3;
             }
-            string pos = position.Name;
+
+            string pos = position.Text;
             int ages = int.Parse(age.Text);
             int jerseyNum = int.Parse(jersey.Text);
             string col = college.Text;
@@ -100,7 +104,7 @@ namespace GUI
             string playerTeam = team.Text;
             Team teams = t.GetTeam(playerTeam);
 
-            string connetionString = "Data Source=(localdb)\\MSSQLLocalDb;Initial Catalog=MockESPN;Integrated Security=True";
+            string connetionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
 
             SqlPlayerRepository s = new SqlPlayerRepository(connetionString);
             s.CreatePlayer(name, posID, pos, ages, jerseyNum, col, homeState, hei, teams.TeamID);

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\
+C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\
 GUI
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\App.xaml
-14757378340
+C:\Users\cgmoe\OneDrive\Desktop\GZSN\GameZone Sports Network\GUI\App.xaml
+191646772727
 
-18-1271697615
-2001004480715
-CountBox.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;PlayerUpdate.xaml;PlayerUpdateInfo.xaml;StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\UpdateControl.xaml;
+23685982361
+200-300144053
+CountBox.xaml;DisplayTeamPlayers.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;RankQBsQuery.xaml;SearchControl.xaml;ShowResultsByWeek.xaml;StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\PlayerUpdate.xaml;UpdateTab\PlayerUpdateInfo.xaml;UpdateTab\TeamUpdate.xaml;UpdateTab\UpdateControl.xaml;
 
-True
+False
 

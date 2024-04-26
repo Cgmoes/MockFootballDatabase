@@ -10,9 +10,28 @@ CREATE OR ALTER PROCEDURE League.CreateOffensiveStats
 	@Receptions INT,
 	@RecievingYrds INT,
 	@Touchdowns INT,
-	@Fumbles INT
+	@Fumbles INT,
+	@OffensiveTeamID INT OUTPUT
 AS
-
-INSERT League.OffensivePlayerStats(PlayerID, PassAttempts, PassCompletions, PassYards, PassTD, Ints, RushYrds, RushAttempts, Receptions, RecievingYrds, Touchdowns, Fumbles)
-VALUES(@PlayerID, @PassAttempts, @PassCompletions, @PassYards, @PassTD, @Ints, @RushYrds, @RushAttempts, @Receptions, @RecievingYrds, @Touchdowns, @Fumbles);
-GO
+BEGIN
+    MERGE INTO League.OffensivePlayerStats AS Target
+    USING (VALUES (@PlayerID)) AS Source(PlayerID)
+    ON Target.PlayerID = Source.PlayerID
+    WHEN MATCHED THEN
+        UPDATE SET
+            PassAttempts = @PassAttempts,
+            PassCompletions = @PassCompletions,
+            PassYards = @PassYards,
+            PassTD = @PassTD,
+			Ints = @Ints,
+			RushYrds = @RushYrds,
+			RushAttempts = @RushAttempts,
+			Receptions = @Receptions,
+			RecievingYrds = @RecievingYrds,
+			Touchdowns = @Touchdowns,
+			Fumbles = @Fumbles
+    WHEN NOT MATCHED THEN
+        INSERT (PlayerID, PassAttempts, PassCompletions, PassYards, PassTD, Ints, RushYrds, RushAttempts, Receptions, RecievingYrds, Touchdowns, Fumbles)
+        VALUES (@PlayerID, @PassAttempts, @PassCompletions, @PassYards, @PassTD, @Ints, @RushYrds, @RushAttempts, @Receptions, @RecievingYrds, @Touchdowns, @Fumbles);
+SET @OffensiveTeamID = SCOPE_IDENTITY()
+END;

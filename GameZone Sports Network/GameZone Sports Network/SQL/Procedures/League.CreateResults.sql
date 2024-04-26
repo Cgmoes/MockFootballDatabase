@@ -1,10 +1,11 @@
 CREATE OR ALTER PROCEDURE League.CreateResults
-   @WeekNumber INT,
-   @TeamPlayed NVARCHAR(32),
-   @PointsScored INT,
-   @PointsAgainst INT
+	@HomeTeam NVARCHAR(32),
+    @WeekNumber INT,
+    @TeamPlayed NVARCHAR(32),
+    @PointsScored INT,
+    @PointsAgainst INT
 AS
 
-INSERT League.Results(WeekNumber, TeamPlayed, PointsScored, PointsAgainst)
-VALUES(@WeekNumber, @TeamPlayed, @PointsScored, @PointsAgainst);
+INSERT League.Results(HomeTeam, WeekNumber, TeamPlayed, PointsScored, PointsAgainst)
+VALUES(@HomeTeam, @WeekNumber, @TeamPlayed, @PointsScored, @PointsAgainst);
 GO

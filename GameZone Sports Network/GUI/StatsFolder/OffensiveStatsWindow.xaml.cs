@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -19,9 +20,34 @@ namespace GUI
     /// </summary>
     public partial class OffensiveStatsWindow : Window
     {
-        public OffensiveStatsWindow()
+        static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        SqlStatsRepository s = new SqlStatsRepository(connectionString);
+        public int idToBe;
+        public OffensiveStatsWindow(int playerId)
         {
             InitializeComponent();
+            idToBe = playerId;
+        }
+        public event EventHandler<CustomEventArgs>? SubmitClose;
+
+        public void SumbitClick(object sender, EventArgs e)
+        {
+            if (sender is Button b)
+            {
+                SubmitClose?.Invoke(this, new CustomEventArgs(b.Name));
+            }
+            int passAtt = int.Parse(passAttBox.Text);
+            int passComp = int.Parse(passCompBox.Text);
+            int passYards = int.Parse(passYardsBox.Text);
+            int passTd = int.Parse(passTdBox.Text);
+            int ints = int.Parse(intsBox.Text);
+            int rushYards = int.Parse(rushYardsBox.Text);
+            int rushAtt = int.Parse(rushAttBox.Text);
+            int rec = int.Parse(recBox.Text);
+            int recYards = int.Parse(recYardsBox.Text);
+            int tds = int.Parse(tdBox.Text);
+            int fumbles = int.Parse(fumblesBox.Text);
+            s.CreateOffensiveTeamsStats(idToBe, passAtt, passComp, passYards, passTd, ints, rushYards, rushAtt, rec, recYards, tds, fumbles);
         }
     }
 }

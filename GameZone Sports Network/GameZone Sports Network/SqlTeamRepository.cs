@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using System.Xml.Linq;
 using Data.Models;
 
 namespace GameZone_Sports_Network
@@ -93,6 +94,7 @@ namespace GameZone_Sports_Network
                 using (var command = new SqlCommand("League.GetTeamByName", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("TeamName", teamName);
 
                     connection.Open();
 
@@ -102,6 +104,34 @@ namespace GameZone_Sports_Network
                     }
                 }
             }
+        }
+
+        public string GetTeamById(int id)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.GetTeamById", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("TeamID", id);
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        return TranslateTeamString(reader);
+                    }
+                }
+            }
+        }
+
+        private string TranslateTeamString(SqlDataReader reader)
+        {
+            var teamNameOrdinal = reader.GetOrdinal("TeamName");
+
+            if (!reader.Read()) return null;
+
+            return reader.GetString(teamNameOrdinal);
         }
 
         private Team TranslateTeam(SqlDataReader reader) 

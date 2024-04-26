@@ -24,16 +24,17 @@ namespace GUI
         }
         public void ClickTopButton(object sender, CustomEventArgs e)
         {
-            if(e.Name == "InsertButton")
+            if (e.Name == "InsertButton")
             {
                 HideVisibilites();
-                StandingsTable.Visibility = Visibility.Hidden;
                 InsertControl.Visibility = Visibility.Visible;
             }
             if (e.Name == "HomeButton")
             {
                 HideVisibilites();
                 StandingsTable.Visibility = Visibility.Visible;
+                ResultByWeek.Visibility = Visibility.Visible;
+                RankQb.Visibility = Visibility.Visible;
             }
             if (e.Name == "UpdateButton")
             {
@@ -41,13 +42,22 @@ namespace GUI
                 UpdateControl.Visibility = Visibility.Visible;
                 UpdateControl.PlayerUpdateControl.PlayerInfo.Visibility = Visibility.Hidden;
             }
-    }
+            if (e.Name == "SearchButton")
+            {
+                HideVisibilites();
+                SearchControl.Visibility = Visibility.Visible;
+            }
+        }
         private void HideVisibilites()
         {
             InsertControl.Visibility = Visibility.Hidden;
             UpdateControl.Visibility = Visibility.Hidden;
             UpdateControl.PlayerUpdateControl.Visibility = Visibility.Hidden;
             UpdateControl.PlayerUpdateControl.PlayerInfo.Visibility = Visibility.Hidden;
+            SearchControl.Visibility = Visibility.Hidden;
+            ResultByWeek.Visibility = Visibility.Hidden;
+            RankQb.Visibility = Visibility.Hidden;
+            StandingsTable.Visibility = Visibility.Hidden;
         }
     }
 }

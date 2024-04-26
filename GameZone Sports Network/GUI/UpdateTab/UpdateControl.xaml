@@ -11,7 +11,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="UpdateTeamButton" Grid.Row="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update Team</Button>
+        <Button x:Name="UpdateTeamButton" Click="ClickTeamUpdate" Grid.Row="1" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36">Update Team</Button>
         <Button x:Name="UpdatePlayerButton" Grid.Column="0" Width="350" Height="125" Background="DarkGray" FontWeight="Black" FontSize="36" Click="ClickPlayerUpdate">Update player</Button>
         <local:PlayerUpdate x:Name="PlayerUpdateControl" Grid.RowSpan="2" Visibility="Hidden"/>
     </Grid>

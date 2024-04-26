@@ -100,6 +100,7 @@ namespace GUI
         {
             InsertPlayerWindow.SubmitClose += SubmitCloseEvent!;
             InsertTeamWindow.SubmitClose += SubmitCloseEvent!;
+            ResultInsertWindow.SubmitClose += SubmitCloseEvent!;
         }
     }
 }

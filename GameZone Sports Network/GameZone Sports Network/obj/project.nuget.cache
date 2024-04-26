@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0NyKFGdW/LTin88llOYUNXeWAF9IAh5CSo3obapst8XYvqITdKk1iq1vWnNi3ig9paPswxM0PHUjJyqe32Z/5g==",
+  "dgSpecHash": "kfcmINajt+YAi/EhcBSbXnNkEGFF3lIb85IcNfuMIqmVeR9K9bzr99AYUBUb3IxJeNq0oRCWw7Oz4A8dp7Zc3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+  "projectFilePath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\GZSN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cgmoe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\cgmoe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

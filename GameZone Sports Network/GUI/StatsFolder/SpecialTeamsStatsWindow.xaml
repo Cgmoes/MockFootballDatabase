@@ -19,20 +19,20 @@
         <TextBlock FontSize="30">Edit Special Team Stats:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Field Goal Attempts:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="fgAttemptsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Field Goals Made:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="fgMadeBox"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Punts:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="puntsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Punt Yards</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19"  Name="puntYardsBox"/>
         </StackPanel>
-        <Button Name="SubmitButtonSpecialTeamStats" Grid.Row="7" FontSize="17" Margin="31,10,175,10" >Submit</Button>
+        <Button Name="SubmitButtonSpecialTeamStats" Grid.Row="7" Click="SumbitClick" FontSize="17" Margin="31,10,175,10" >Submit</Button>
     </Grid>
 </Window>

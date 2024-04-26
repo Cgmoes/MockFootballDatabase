@@ -8,7 +8,8 @@ namespace Data.Models
 {
     public class OffensiveGamePlayerStats
     {
-        public int GameID { get; }
+        public int OffensiveID { get; }
+        public int PlayerID { get; }
         public int? PassAttempts { get; }
         public int? PassCompletions { get; }
         public int? PassYards { get; }
@@ -18,13 +19,13 @@ namespace Data.Models
         public int? RushAttempts { get; }
         public int? Receptions { get; }
         public int? RecievingYrds { get; }
-        public int? RushTDs { get; }
-        public int? RecievingTDs { get; }
+        public int? Touchdowns { get; }
         public int? Fumbles { get; }
 
-        public OffensiveGamePlayerStats(int gameID, int? passAttempts, int? passCompletions, int? passYards, int? passTDs, int? ints, int? rushYrds, int? rushAttempts, int? receptions, int? recievingYrds, int? rushTDs, int? recievingTDs, int? fumbles)
+        public OffensiveGamePlayerStats(int gameID, int playerId, int? passAttempts, int? passCompletions, int? passYards, int? passTDs, int? ints, int? rushYrds, int? rushAttempts, int? receptions, int? recievingYrds, int? touchdowns, int? fumbles)
         {
-            GameID = gameID;
+            OffensiveID = gameID;
+            PlayerID = playerId;
             PassAttempts = passAttempts;
             PassCompletions = passCompletions;
             PassYards = passYards;
@@ -34,8 +35,7 @@ namespace Data.Models
             RushAttempts = rushAttempts;
             Receptions = receptions;
             RecievingYrds = recievingYrds;
-            RushTDs = rushTDs;
-            RecievingTDs = recievingTDs;
+            Touchdowns = touchdowns;
             Fumbles = fumbles;
         }
     }

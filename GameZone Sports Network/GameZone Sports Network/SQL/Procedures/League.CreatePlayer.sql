@@ -7,9 +7,12 @@ CREATE OR ALTER PROCEDURE League.CreatePlayer
    @CollegeName NVARCHAR(32),
    @HomeState NVARCHAR(32),
    @Height INT,
-   @TeamID INT
+   @TeamID INT,
+   @PlayerID INT OUTPUT
 AS
-
-INSERT League.Player(PlayerName, PositionID, Position, Age, JerseyNumber, CollegeName, HomeState, Height, TeamID)
+BEGIN
+INSERT INTO League.Player(PlayerName, PositionID, Position, Age, JerseyNumber, CollegeName, HomeState, Height, TeamID)
 VALUES(@PlayerName, @PositionID, @Position, @Age, @JerseyNumber, @CollegeName, @HomeState, @Height, @TeamID);
-GO
+
+    SET @PlayerID = SCOPE_IDENTITY()
+END

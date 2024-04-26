@@ -12,8 +12,8 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition Height="45"/>
             <RowDefinition/>
+            <RowDefinition Height="45"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -25,48 +25,48 @@
         <TextBlock FontSize="30">Edit Offensive Stats:</TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="12">Pass Attempts:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="passAttBox"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Pass Completions:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="passCompBox"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Passing Yards:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="passYardsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="13">Passing TDs</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="passTdBox"/>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Ints:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="intsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Rush Yards:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="rushYardsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="7" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Rush Attempts:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="rushAttBox"/>
         </StackPanel>
         <StackPanel Grid.Row="8" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Receptions:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="recBox"/>
         </StackPanel>
         <StackPanel Grid.Row="9" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Receiving Yards:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="recYardsBox"/>
         </StackPanel>
         <StackPanel Grid.Row="10" Grid.Column="0" Orientation="Horizontal">
-            <TextBlock FontSize="15" Margin="11">Touchdowns:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBlock FontSize="15" Margin="11"> Touchdowns:</TextBlock>
+            <TextBox Width="66" Height="19" Name="tdBox"/>
         </StackPanel>
         <StackPanel Grid.Row="11" Grid.Column="0" Orientation="Horizontal">
             <TextBlock FontSize="15" Margin="11">Fumbles:</TextBlock>
-            <TextBox Width="66" Height="19"/>
+            <TextBox Width="66" Height="19" Name="fumblesBox"/>
         </StackPanel>
-        <Button Name="SubmitButtonOffensiveStats" Grid.Row="12" FontSize="17" Margin="31,10,220,10" >Submit</Button>
+        <Button Name="SubmitButtonOffensiveStats" Grid.Row="13" FontSize="17" Margin="31,10,220,10" Click="SumbitClick">Submit</Button>
     </Grid>
 </Window>

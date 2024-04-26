@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="GUI.PlayerUpdateInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI"
+             mc:Ignorable="d" 
+             Height="550" Width="350">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="30">Update Player:</TextBlock>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="12">Name:</TextBlock>
+            <TextBox Name="playerName" Width="194" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Position Role:</TextBlock>
+            <ComboBox Name="posID" SelectionChanged="ChangedPosition"  Height="17" Width="106"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Position:</TextBlock>
+            <ComboBox Name="position" Height="17" Width="106"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="13">Team:</TextBlock>
+            <ComboBox Name="team" Height="17" Width="106"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Age:</TextBlock>
+            <TextBox Name="age" Width="57" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Jersey Number:</TextBlock>
+            <TextBox Name="jerseyNumber" Width="57" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">College Name:</TextBlock>
+            <TextBox Name="college" Width="211" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Home State:</TextBlock>
+            <TextBox Name="state" Width="45" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="9" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="11">Height:</TextBlock>
+            <TextBox Name="height" Width="45" Height="17"/>
+        </StackPanel>
+        <StackPanel Grid.Row="10" Orientation="Horizontal">
+            <Button Name="UpdateButtonPlayer" Grid.Row="10" FontSize="17" Width="115" Height="29" Margin="10" Click="UpdateClick">Update</Button>
+            <Button x:Name="EditStatsButtonPlayer" FontSize="17" Width="118" Height="29" HorizontalAlignment="Right" Margin="10" Click="EditStatsButton" Content="Edit Stats"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
