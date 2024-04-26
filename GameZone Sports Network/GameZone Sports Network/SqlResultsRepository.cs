@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -40,6 +41,59 @@ namespace GameZone_Sports_Network
                     }
                 }
             }   
+        }
+
+        public List<string> GetResultsByWeek(int weekNumber)
+        {
+            List<string> teamInfoList = new List<string>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand("League.GetResultsByWeek", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@WeekNumber", weekNumber);
+
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            teamInfoList.Add($"Home Team: {reader["Home Team"]}\tAway Team: {reader["Away Team"]}\tScore: {reader["Home Score"]}-{reader["Away Score"]}");
+                        }
+                    }
+                } 
+            }
+            return teamInfoList;
+        }
+
+        public List<string> ShowStandings() 
+        {
+            List<string> results = new List<string>();
+            int count = 0;
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("League.ShowStandings", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count++;
+                            string teamName = reader["Team"].ToString()!;
+
+                            results.Add($"{count}. Team: {teamName}");
+                        }
+                    }
+                }
+            }
+            return results;
         }
     }
 }

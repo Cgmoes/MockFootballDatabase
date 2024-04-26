@@ -1,10 +1,12 @@
 CREATE OR ALTER PROCEDURE League.GetResultsByWeek
-	@Week INT
+	@WeekNumber INT
 AS
+BEGIN
+    SET NOCOUNT ON;
 
-SELECT T.TeamName AS Team, R.TeamPlayed AS Opponent, R.PointsScored, R.PointsAgainst
-FROM League.Results R
-	INNER JOIN League.TeamResults TR ON TR.ResultID = R.ResultID
-	INNER JOIN League.Team T ON T.TeamID = TR.TeamID
-WHERE R.WeekNumber = @Week
-GROUP BY T.TeamName, R.TeamPlayed, R.PointsScored, R.PointsAgainst;
+    -- Retrieve results for each team for the specified week
+    SELECT R.HomeTeam AS N'Home Team', R.TeamPlayed AS N'Away Team', R.PointsScored AS N'Home Score', R.PointsAgainst AS N'Away Score'
+    FROM League.Results R
+	WHERE R.WeekNumber = @WeekNumber
+	GROUP BY R.HomeTeam, R.TeamPlayed, R.PointsAgainst, R.PointsScored
+END;

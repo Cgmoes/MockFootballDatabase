@@ -78,7 +78,7 @@ namespace GameZone_Sports_Network
                         while (reader.Read())
                         {
                             
-                            string team = reader["TeamName"].ToString();
+                            string team = reader["TeamName"].ToString()!;
                             teams.Add(team);
                         }
                     }
@@ -129,7 +129,7 @@ namespace GameZone_Sports_Network
         {
             var teamNameOrdinal = reader.GetOrdinal("TeamName");
 
-            if (!reader.Read()) return null;
+            if (!reader.Read()) return null!;
 
             return reader.GetString(teamNameOrdinal);
         }
@@ -141,7 +141,7 @@ namespace GameZone_Sports_Network
             var teamCityOrdinal = reader.GetOrdinal("TeamCity");
             var yearEstablishedOrdinal = reader.GetOrdinal("YearEstablished");
 
-            if (!reader.Read()) return null;
+            if (!reader.Read()) return null!;
 
             return new Team(
                 reader.GetInt32(teamIdOrdinal),

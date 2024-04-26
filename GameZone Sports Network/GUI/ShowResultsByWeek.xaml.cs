@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -20,9 +21,23 @@ namespace GUI
     /// </summary>
     public partial class ShowResultsByWeek : UserControl
     {
+        public static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        public SqlResultsRepository t = new SqlResultsRepository(connectionString);
+
         public ShowResultsByWeek()
         {
             InitializeComponent();
+        }
+        private void SubmitClick(object sender, RoutedEventArgs e)
+        {
+            int weekNumber = countBox.Count;
+            List<string> teamResults = t.GetResultsByWeek(weekNumber);
+
+            showResultsBox.Items.Clear();
+            foreach (string teamInfo in teamResults)
+            {
+                showResultsBox.Items.Add(teamInfo);
+            }
         }
     }
 }

@@ -14,7 +14,7 @@
                 <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock TextAlignment="Center" FontSize="40" FontWeight="Black">Standings</TextBlock>
-        <ListBox Background="LightGray" Grid.Row="1"/>
+        <ListBox Background="LightGray" Grid.Row="1" Name="standingsBox"/>
     </Grid>
     </Border>
 </UserControl>

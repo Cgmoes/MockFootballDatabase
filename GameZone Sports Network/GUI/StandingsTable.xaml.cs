@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GameZone_Sports_Network;
 
 namespace GUI
 {
@@ -20,9 +21,21 @@ namespace GUI
     /// </summary>
     public partial class StandingsTable : UserControl
     {
+        public static string connectionString = "Data Source=(localdb)\\mylocaldb;Initial Catalog=MockESPN;Integrated Security=True";
+        public SqlResultsRepository t = new SqlResultsRepository(connectionString);
         public StandingsTable()
         {
             InitializeComponent();
+            populateStandings();
+        }
+
+        public void populateStandings() 
+        {
+            List<string> standings = t.ShowStandings();
+            foreach(string team in standings) 
+            {
+                standingsBox.Items.Add(team);
+            }
         }
     }
 }
