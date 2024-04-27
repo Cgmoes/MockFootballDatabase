@@ -1,3 +1,5 @@
+--Creates the standings for each team to show their wins, ties, and losses
+--ranking them by their wins
 CREATE OR ALTER PROCEDURE League.ShowStandings
 AS
 BEGIN
@@ -23,3 +25,5 @@ BEGIN
     GROUP BY Team
     ORDER BY Wins DESC, Ties DESC, Losses ASC;
 END;
+
+EXEC League.ShowStandings

@@ -1,3 +1,6 @@
+--Aggregate query to rank the quarterbacks in the
+--league based on how many touchdowns they have thrown
+--includes what team they are on
 CREATE OR ALTER PROCEDURE League.GetQBRankings
 AS
 BEGIN
