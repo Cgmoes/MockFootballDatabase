@@ -2,16 +2,16 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="DisplayTeamPlayers.xaml.cs">
+    <Compile Update="Queries Controls\DisplayTeamPlayers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RankQBsQuery.xaml.cs">
+    <Compile Update="Queries Controls\RankQBsQuery.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="SearchControl.xaml.cs">
+    <Compile Update="Queries Controls\SearchControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ShowResultsByWeek.xaml.cs">
+    <Compile Update="Queries Controls\ShowResultsByWeek.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UpdateTab\TeamUpdate.xaml.cs">
@@ -25,7 +25,7 @@
     <Page Update="CountBox.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="DisplayTeamPlayers.xaml">
+    <Page Update="Queries Controls\DisplayTeamPlayers.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Insert Tab\InsertControl.xaml">
@@ -43,13 +43,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RankQBsQuery.xaml">
+    <Page Update="Queries Controls\RankQBsQuery.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="SearchControl.xaml">
+    <Page Update="Queries Controls\SearchControl.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ShowResultsByWeek.xaml">
+    <Page Update="Queries Controls\ShowResultsByWeek.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UpdateTab\TeamUpdate.xaml">
@@ -61,7 +61,7 @@
     <Page Update="UpdateTab\PlayerUpdateInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="StandingsTable.xaml">
+    <Page Update="Queries Controls\StandingsTable.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StatsFolder\DefensiveStatsWindow.xaml">

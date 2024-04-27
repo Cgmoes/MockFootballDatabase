@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Database Final\GameZone Sports Network\GUI\obj\Release\net7.0-windows\
+C:\Last one\GameZone Sports Network\GUI\obj\Release\net7.0-windows\
 GUI
 none
 false
 TRACE;RELEASE;NET;NET7_0;NETCOREAPP
-C:\Database Final\GameZone Sports Network\GUI\App.xaml
-14757378340
+C:\Last one\GameZone Sports Network\GUI\App.xaml
+19-143120141
 
-18-1127380444
-200526401467
-CountBox.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;PlayerUpdate.xaml;PlayerUpdateInfo.xaml;StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\UpdateControl.xaml;
+23-1042068692
+200-1929708548
+CountBox.xaml;Insert Tab\InsertControl.xaml;Insert Tab\InsertPlayerWindow.xaml;Insert Tab\InsertTeamWindow.xaml;Insert Tab\ResultInsertWindow.xaml;MainWindow.xaml;Queries Controls\DisplayTeamPlayers.xaml;Queries Controls\RankQBsQuery.xaml;Queries Controls\SearchControl.xaml;Queries Controls\ShowResultsByWeek.xaml;Queries Controls\StandingsTable.xaml;StatsFolder\DefensiveStatsWindow.xaml;StatsFolder\OffensiveStatsWindow.xaml;StatsFolder\SpecialTeamsStatsWindow.xaml;TopButtonBar.xaml;UpdateTab\PlayerUpdate.xaml;UpdateTab\PlayerUpdateInfo.xaml;UpdateTab\TeamUpdate.xaml;UpdateTab\UpdateControl.xaml;
 
 True
 

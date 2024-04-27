@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:GUI"
              mc:Ignorable="d" 
              d:DesignHeight="250" d:DesignWidth="300">
-    <Grid Background="LightGray">
+    <Border BorderBrush="#2c0483" BorderThickness="5">
+        <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height=".15*"/>
             <RowDefinition/>
@@ -14,4 +15,5 @@
         <TextBlock FontSize="18" FontWeight="Black">Ranking QBs - Passing TDs</TextBlock>
         <ListBox FontSize="15" FontWeight="Bold" Background="LightGray" Grid.Row="1" x:Name="rankingListBox"></ListBox>
     </Grid>
+    </Border>
 </UserControl>

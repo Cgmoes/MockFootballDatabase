@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\cgmoe\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\cgmoe\\.nuget\\packages"
+      "C:\\Users\\nslin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\nslin\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

@@ -5,11 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GUI"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="350">
+             d:DesignHeight="450" d:DesignWidth="350">
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height=".2*"/>
             <RowDefinition/>
+            <RowDefinition Height=".3*"/>
         </Grid.RowDefinitions>
         <TextBlock FontSize="40" Margin="10,0,0,0" FontWeight="Black">Result Players:</TextBlock>
         <ListBox x:Name="playerListBox" Grid.Row="1" FontSize="18"></ListBox>

@@ -6,15 +6,17 @@
              xmlns:local="clr-namespace:GUI"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="400">
-    <Border BorderBrush="Black" BorderThickness="2">
+    <Border BorderBrush="#2c0483" BorderThickness="5">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height=".22*">
                 </RowDefinition>
                 <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock TextAlignment="Center" FontSize="40" FontWeight="Black">Standings</TextBlock>
-        <ListBox Background="LightGray" Grid.Row="1" FontSize="15" FontWeight="Bold" Name="standingsBox"/>
+            <Border BorderBrush="#2c0483" BorderThickness="5">
+                <TextBlock TextAlignment="Center" FontSize="40" FontWeight="Black">Standings</TextBlock>
+            </Border>
+            <ListBox Background="LightGray" Grid.Row="1" FontSize="15" FontWeight="Bold" Name="standingsBox"/>
     </Grid>
     </Border>
 </UserControl>
