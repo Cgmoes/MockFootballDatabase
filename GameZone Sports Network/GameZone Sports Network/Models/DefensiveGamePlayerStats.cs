@@ -11,13 +11,13 @@ namespace Data.Models
         public int DefensiveTeamID { get; }
 
         public int PlayerId { get; }
-        public int Tackles { get; }
-        public int Sacks { get; }
-        public int Interceptions { get; }
-        public int Fumbles { get; }
-        public int TDs { get; }
+        public int? Tackles { get; }
+        public int? Sacks { get; }
+        public int? Interceptions { get; }
+        public int? Fumbles { get; }
+        public int? TDs { get; }
 
-        public DefensiveGamePlayerStats(int id, int playerId, int tackles, int sacks, int interceptions, int fumbles, int tDs)
+        public DefensiveGamePlayerStats(int id, int playerId, int? tackles, int? sacks, int? interceptions, int? fumbles, int? tDs)
         {
             DefensiveTeamID = id;
             PlayerId = playerId;

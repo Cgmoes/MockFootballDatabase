@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Last one\\GameZone Sports Network\\GUI\\GUI.csproj": {}
+    "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "C:\\Last one\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {
+    "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Last one\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Last one\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
-        "packagesPath": "C:\\Users\\nslin\\.nuget\\packages\\",
-        "outputPath": "C:\\Last one\\GameZone Sports Network\\GameZone Sports Network\\obj\\",
+        "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj",
+        "packagesPath": "C:\\Users\\cgmoe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nslin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cgmoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,17 +70,17 @@
         }
       }
     },
-    "C:\\Last one\\GameZone Sports Network\\GUI\\GUI.csproj": {
+    "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Last one\\GameZone Sports Network\\GUI\\GUI.csproj",
+        "projectUniqueName": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "C:\\Last one\\GameZone Sports Network\\GUI\\GUI.csproj",
-        "packagesPath": "C:\\Users\\nslin\\.nuget\\packages\\",
-        "outputPath": "C:\\Last one\\GameZone Sports Network\\GUI\\obj\\",
+        "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\GUI.csproj",
+        "packagesPath": "C:\\Users\\cgmoe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nslin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cgmoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,8 +94,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Last one\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {
-                "projectPath": "C:\\Last one\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj"
+              "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj": {
+                "projectPath": "C:\\Users\\cgmoe\\OneDrive\\Desktop\\MockESPN\\GameZone Sports Network\\GameZone Sports Network\\Data.csproj"
               }
             }
           }

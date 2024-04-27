@@ -73,7 +73,7 @@ namespace GUI
                 rushAttBox.Text = stats.RushAttempts.ToString();
                 recBox.Text = stats.Receptions.ToString();
                 recYardsBox.Text = stats.RecievingYrds.ToString() ;
-                tdBox.Text = stats.Touchdowns.ToString();
+                tdBox.Text = stats.RushTouchdowns.ToString();
                 fumblesBox.Text = stats.Fumbles.ToString();
 
                 return true;

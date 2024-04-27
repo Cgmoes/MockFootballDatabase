@@ -9,8 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Scripts\" />
-    <Folder Include="sql\Data\" />
+    <Compile Remove="Scripts\**" />
+    <Compile Remove="sql\Data\**" />
+    <EmbeddedResource Remove="Scripts\**" />
+    <EmbeddedResource Remove="sql\Data\**" />
+    <None Remove="Scripts\**" />
+    <None Remove="sql\Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="sql\Procedures\" />
     <Folder Include="sql\Schemas\" />
     <Folder Include="sql\Tables\" />

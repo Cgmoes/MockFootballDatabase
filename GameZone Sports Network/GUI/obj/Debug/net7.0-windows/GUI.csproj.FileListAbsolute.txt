@@ -169,7 +169,6 @@ C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\n
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\ResultInsertWindow.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\DefensiveStatsWindow.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\OffensiveStatsWindow.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\SpecialTeamsStatsWindow.g.cs
@@ -198,7 +197,6 @@ C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\n
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\InsertTeamWindow.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Insert Tab\ResultInsertWindow.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StandingsTable.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\DefensiveStatsWindow.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\OffensiveStatsWindow.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\StatsFolder\SpecialTeamsStatsWindow.baml
@@ -308,17 +306,9 @@ C:\GUI stuff\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
 C:\GUI stuff\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
 C:\GUI stuff\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 C:\GUI stuff\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\DisplayTeamPlayers.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\RankQBsQuery.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\SearchControl.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ShowResultsByWeek.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\PlayerUpdate.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\PlayerUpdateInfo.g.cs
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\TeamUpdate.g.cs
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\DisplayTeamPlayers.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\RankQBsQuery.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\SearchControl.baml
-C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ShowResultsByWeek.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\PlayerUpdate.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\PlayerUpdateInfo.baml
 C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\UpdateTab\TeamUpdate.baml
@@ -390,3 +380,13 @@ C:\Last one\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
 C:\Last one\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.pdb
 C:\Last one\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\GUI.genruntimeconfig.cache
 C:\Last one\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\ref\GUI.dll
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\DisplayTeamPlayers.g.cs
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\RankQBsQuery.g.cs
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\SearchControl.g.cs
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\ShowResultsByWeek.g.cs
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\StandingsTable.g.cs
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\DisplayTeamPlayers.baml
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\RankQBsQuery.baml
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\SearchControl.baml
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\ShowResultsByWeek.baml
+C:\Users\cgmoe\OneDrive\Desktop\MockESPN\GameZone Sports Network\GUI\obj\Debug\net7.0-windows\Queries Controls\StandingsTable.baml

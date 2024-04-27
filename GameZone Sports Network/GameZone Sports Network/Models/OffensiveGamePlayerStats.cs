@@ -19,7 +19,7 @@ namespace Data.Models
         public int? RushAttempts { get; }
         public int? Receptions { get; }
         public int? RecievingYrds { get; }
-        public int? Touchdowns { get; }
+        public int? RushTouchdowns { get; }
         public int? Fumbles { get; }
 
         public OffensiveGamePlayerStats(int gameID, int playerId, int? passAttempts, int? passCompletions, int? passYards, int? passTDs, int? ints, int? rushYrds, int? rushAttempts, int? receptions, int? recievingYrds, int? touchdowns, int? fumbles)
@@ -35,7 +35,7 @@ namespace Data.Models
             RushAttempts = rushAttempts;
             Receptions = receptions;
             RecievingYrds = recievingYrds;
-            Touchdowns = touchdowns;
+            RushTouchdowns = touchdowns;
             Fumbles = fumbles;
         }
     }
