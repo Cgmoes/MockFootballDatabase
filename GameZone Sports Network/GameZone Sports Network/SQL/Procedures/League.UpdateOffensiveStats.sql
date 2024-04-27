@@ -9,7 +9,7 @@ CREATE OR ALTER PROCEDURE League.UpdateOffensiveStats
 	@RushAttempts INT,
 	@Receptions INT,
 	@RecievingYrds INT,
-	@Touchdowns INT,
+	@RushTouchdowns INT,
 	@Fumbles INT
 AS
 
@@ -23,6 +23,6 @@ SET PassAttempts = @PassAttempts,
 	RushAttempts = @RushAttempts,
 	Receptions = @Receptions,
 	RecievingYrds = @RecievingYrds,
-	Touchdowns = @Touchdowns,
+	RushTD = @RushTouchdowns,
 	Fumbles = @Fumbles
 WHERE PlayerID = @PlayerID

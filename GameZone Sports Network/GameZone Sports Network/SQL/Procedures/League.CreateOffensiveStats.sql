@@ -9,7 +9,7 @@ CREATE OR ALTER PROCEDURE League.CreateOffensiveStats
 	@RushAttempts INT,
 	@Receptions INT,
 	@RecievingYrds INT,
-	@Touchdowns INT,
+	@RushTouchdowns INT,
 	@Fumbles INT,
 	@OffensiveTeamID INT OUTPUT
 AS
@@ -28,10 +28,10 @@ BEGIN
 			RushAttempts = @RushAttempts,
 			Receptions = @Receptions,
 			RecievingYrds = @RecievingYrds,
-			Touchdowns = @Touchdowns,
+			RushTD = @RushTouchdowns,
 			Fumbles = @Fumbles
     WHEN NOT MATCHED THEN
-        INSERT (PlayerID, PassAttempts, PassCompletions, PassYards, PassTD, Ints, RushYrds, RushAttempts, Receptions, RecievingYrds, Touchdowns, Fumbles)
-        VALUES (@PlayerID, @PassAttempts, @PassCompletions, @PassYards, @PassTD, @Ints, @RushYrds, @RushAttempts, @Receptions, @RecievingYrds, @Touchdowns, @Fumbles);
+        INSERT (PlayerID, PassAttempts, PassCompletions, PassYards, PassTD, Ints, RushYrds, RushAttempts, Receptions, RecievingYrds, RushTD, Fumbles)
+        VALUES (@PlayerID, @PassAttempts, @PassCompletions, @PassYards, @PassTD, @Ints, @RushYrds, @RushAttempts, @Receptions, @RecievingYrds, @RushTouchdowns, @Fumbles);
 SET @OffensiveTeamID = SCOPE_IDENTITY()
 END;

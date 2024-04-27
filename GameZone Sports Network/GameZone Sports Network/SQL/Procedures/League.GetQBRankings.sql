@@ -7,7 +7,7 @@ BEGIN
             p.PlayerName,
             p.Position,
             t.TeamName,
-            ROW_NUMBER() OVER (ORDER BY o.Touchdowns DESC) AS PlayerRank
+            ROW_NUMBER() OVER (ORDER BY o.PassTD DESC) AS PlayerRank
         FROM
             League.Player p
         INNER JOIN
@@ -22,8 +22,7 @@ BEGIN
         r.PlayerName,
         r.Position,
         r.TeamName,
-		o.Touchdowns,
-		r.TeamName
+		o.PassTD
     FROM
         RankedPlayers r
 	INNER JOIN League.OffensivePlayerStats o ON o.PlayerID = r.PlayerID 

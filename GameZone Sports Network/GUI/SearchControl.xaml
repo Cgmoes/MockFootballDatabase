@@ -23,7 +23,7 @@
             <StackPanel Orientation="Horizontal" Grid.Row="2">
                 <TextBlock Margin="17" FontSize="15" Height="25">Search Team:</TextBlock>
                 <TextBox Name="searchBox" Width="155" Height="17"></TextBox>
-                <Button Content="Submit" Width="75" Height="17" />
+                <Button Click="SubmitButton" Content="Submit" Width="75" Height="17" />
             </StackPanel>
         </Grid>
         <local:DisplayTeamPlayers x:Name="DisplayTeamPlayerControl" Grid.Column="1" Grid.ColumnSpan="2" Margin="38,0,0,89"/>

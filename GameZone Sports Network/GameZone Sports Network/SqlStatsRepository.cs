@@ -121,7 +121,7 @@ namespace GameZone_Sports_Network
                         command.Parameters.AddWithValue("RushAttempts", rushAtt);
                         command.Parameters.AddWithValue("Receptions", rec);
                         command.Parameters.AddWithValue("RecievingYrds", recYrds);
-                        command.Parameters.AddWithValue("Touchdowns", tds);
+                        command.Parameters.AddWithValue("RushTouchdowns", tds);
                         command.Parameters.AddWithValue("Fumbles", fumbles);
 
                         var t = command.Parameters.Add("OffensiveTeamID", SqlDbType.Int);
@@ -305,7 +305,7 @@ namespace GameZone_Sports_Network
                         command.Parameters.AddWithValue("RushAttempts", rushAtt);
                         command.Parameters.AddWithValue("Receptions", rec);
                         command.Parameters.AddWithValue("RecievingYrds", recYrds);
-                        command.Parameters.AddWithValue("Touchdowns", tds);
+                        command.Parameters.AddWithValue("RushTouchdowns", tds);
                         command.Parameters.AddWithValue("Fumbles", fumbles);
 
                         connection.Open();
@@ -359,7 +359,7 @@ namespace GameZone_Sports_Network
             var rushAttemptsOrdinal = reader.GetOrdinal("RushAttempts");
             var receptionsOrdinal = reader.GetOrdinal("Receptions");
             var recYardsOrdinal = reader.GetOrdinal("RecievingYrds");
-            var tdOrdinal = reader.GetOrdinal("Touchdowns");
+            var tdOrdinal = reader.GetOrdinal("RushTD");
             var fumblesOrdinal = reader.GetOrdinal("Fumbles");
 
             if (!reader.Read()) return null;

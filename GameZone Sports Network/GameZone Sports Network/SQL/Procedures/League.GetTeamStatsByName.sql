@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE League.GetTeamStatsByName
+CREATE PROCEDURE League.GetTeamStatsByName
     @TeamName NVARCHAR(32)
 AS
 BEGIN
@@ -7,8 +7,8 @@ BEGIN
         t.TeamName,
         COUNT(p.PlayerID) AS TotalPlayers,
         AVG(p.Age) AS AverageAge,
-		t.TeamCity,
-		t.YearEstablished
+        MIN(p.Height) AS ShortestPlayerHeight,
+        MAX(p.Height) AS TallestPlayerHeight
     FROM 
         League.Team t
     INNER JOIN 
@@ -16,5 +16,5 @@ BEGIN
     WHERE 
         t.TeamName = @TeamName
     GROUP BY 
-        t.TeamID, t.TeamName, t.TeamCity, t.YearEstablished;
+        t.TeamID, t.TeamName;
 END;

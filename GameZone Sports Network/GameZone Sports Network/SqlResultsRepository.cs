@@ -112,7 +112,7 @@ namespace GameZone_Sports_Network
                     {
                         while (reader.Read())
                         {
-                            results.Add($"{reader["PlayerRank"]}.{reader["PlayerName"]} - ({reader["TeamName"]}) \tTouchdowns: {reader["Touchdowns"]}");
+                            results.Add($"{reader["PlayerRank"]}.{reader["PlayerName"]} - ({reader["TeamName"]}) \tTouchdowns: {reader["PassTD"]}");
                         }
                     }
                 }

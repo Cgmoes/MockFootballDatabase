@@ -14,7 +14,7 @@ BEGIN
 		RushAttempts INT NULL,
 		Receptions INT NULL,
 		RecievingYrds INT NULL,
-		Touchdowns INT NULL,
+		RushTD INT NULL,
 		Fumbles INT NULL
 	)
 END;

@@ -52,5 +52,17 @@ namespace GUI
                 teamListBox.Items.Add(team);
             }
         }
+
+        public void SubmitButton(object sender, RoutedEventArgs e)
+        {
+            teamListBox.Items.Clear();
+            foreach (string t in t.RetrieveTeamNames())
+            {
+                if (t.Contains(searchBox.Text, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    teamListBox.Items.Add(t);
+                }
+            }
+        }
     }
 }
